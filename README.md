@@ -1,7 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/andrewskyboss/milestone-project-02)
 
 # milestone-project-04
-# Full Stack Frameworks with Django / GYM & Fitness Club
+# Full Stack Frameworks with Django / The CUBE | GYM & Fitness Club
 
 ![logo](assets/images/homepage.PNG)
 [Live site on Github Pages](https://andrewskyboss.github.io/milestone-project-04)

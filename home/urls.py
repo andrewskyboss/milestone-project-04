@@ -1,4 +1,6 @@
-from django.contrib import admin
+"""
+thecube_gym_fitness_club Home app URL Configuration
+"""
 from django.urls import path
 from . import views
 

@@ -119,7 +119,7 @@ This project was built based on the target audience needs. As was mentioned abov
 As I was mentioned above, the color palette were taken to represent colors of Nature. Pale Shades of Blue, Red and green are very pleasant and should associate with water, sun and summer grass. Additionally three shades of grey were used to highlight the colors of Nature. Combination of those colors should create emotional trust and mood of future rest and travel.
 
 - Color palete was created using [Coolors resources](https://coolors.co)
-- ![color scheme](assets/images/color-sheme.PNG)
+- ![color scheme](assets/images/colors.PNG)
 
 #### Typography
 - Elegant Quicksand sans-serif typeface family font, were using in this project for the body text. Body font size is 16px. This body font is easy to read and good for design.
@@ -131,12 +131,13 @@ As I was mentioned above, the color palette were taken to represent colors of Na
 - body font is in same size for mobile devices.
 
 - Font examples are presented below:
-- H1 Abril Fatface 50px ![H1 Title Abril Fatface 50px](assets/images/h1.PNG)
-- H2 Abril Fatface 40px ![H2 Title Abril Fatface 40px](assets/images/h2.PNG)
-- H3 Abril Fatface 30px ![H3 Title Abril Fatface 30px](assets/images/h3.PNG)
-- Paragraph (body) Quicksand 16px ![p Paragraph Quicksand 16px](assets/images/p.PNG)
-- [Abril Fatface font can be found here](https://fonts.google.com/specimen/Abril+Fatface)
-- [Quicksand  font can be found here](https://fonts.google.com/specimen/Quicksand)
+- H1 Oswald 50px ![H1 Title Oswald 50px](assets/images/h1.PNG)
+- H2 Oswald 40px ![H2 Title Oswald 40px](assets/images/h2.PNG)
+- H3 Roboto Mono 30px ![H3 Title Roboto Mono 30px](assets/images/h3.PNG)
+- Paragraph (body) Roboto 16px ![p Paragraph Roboto 16px](assets/images/p.PNG)
+- [Oswald font can be found here](https://fonts.google.com/specimen/Oswald?query=oswa)
+- [Roboto Mono font can be found here](https://fonts.google.com/specimen/Roboto+Mono?query=robot)
+- [Roboto font can be found here](https://fonts.google.com/specimen/Roboto?query=robot)
  
 
 #### Images

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+
+:root {
+  --color-brand-1: #BB2301; /*Orange Engineering*/
+  --color-brand-2: #F89400; /*Yellow Orange*/
+  --color-brand-3: #21565C; /*Dark Slate grey*/
+  --color-brand-4: #E0D3DE; /*Languid Levander * grey*/
+  --color-brand-5: #091819; /*Dark Jungle Green*/
+  --color-brand-6: #1B1725;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: var(--color-brand-1);
+	font-size: 50px;
+	text-align: center;
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	text-transform: capitalize;
+	font-size: 40px;
+	color: var(--color-brand-2);
+}
+h3 {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
+	font-size: 30px;
+	color: var(--color-brand-3);
+}

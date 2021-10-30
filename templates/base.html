@@ -45,6 +45,7 @@
         "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity=
         "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -59,11 +60,21 @@
             <div class="row header-row">
                 <div class="header-logo">
                     <a href="{% url 'home' %}" class="header-logo-link" title="GYM & Fitness Club">
-                        <img src="{% static 'gym-logo.svg' %}" alt="logo icon"></a>
+                        <img src="{% static 'media/gym-logo.svg' %}" alt="logo icon"></a>
                 </div>
-
+                <div class="header-tags left">
+                    <a class="header-tag mobile-menu-trigger mobile-menu-hidden" >
+                        <div class="menu-hamburger">
+                            <span class="menu-hamburger-bars">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                {% include 'includes/main-nav.html' %}
             </div>
-
         </header>
         {% if messages %}
             <div class="message-container"></div>

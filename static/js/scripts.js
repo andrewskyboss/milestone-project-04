@@ -28,15 +28,15 @@ function mobileMenuOpenClose(open) {
 }
 
 $(window).on('load', function() {
-		// Initialize on-load animations
-		$('body').addClass('on-load-animations-start');
-	});
+    // Initialize on-load animations
+    $('body').addClass('on-load-animations-start');
+});
 
 $(window).on('load scroll', function(e) {
-		// Handle scroll
-		if($(document).scrollTop() > scrollThreshold) {
-			$('body').addClass('scrolled');
-		} else {
-			$('body').removeClass('scrolled');
-		}
-	});
+    // Handle scroll
+    if($(document).scrollTop() > scrollThreshold) {
+        $('body').addClass('scrolled');
+    } else {
+        $('body').removeClass('scrolled');
+    }
+});

@@ -7,21 +7,36 @@
                         <span class="menu-item-title">Shop</span>
                     </a>
                 </li>
+                <!-- {% if request.user.is_authenticated %} -->
+                    <!-- {% if request.user.is_superuser %} -->
+                        <li class="menu-item">
+                            <a class="menu-link" href="#" title="Product Management">
+                                <span class="menu-item-title">Product Management</span>
+                            </a>
+                        </li>
+                    <!-- {% endif %} -->
+                    <li class="menu-item">
+                        <a class="menu-link" href="#" title="Log Out">
+                            <span class="menu-item-title">My Profile</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#" title="Log Out">
+                            <span class="menu-item-title">Log Out</span>
+                        </a>
+                    </li>
+                <!-- {% else %} -->
                 <li class="menu-item">
                     <a class="menu-link" href="#" title="Log In">
                         <span class="menu-item-title">Log In</span>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="#" title="Log Out">
-                        <span class="menu-item-title">Log Out</span>
+                    <a class="menu-link" href="#" title="Register">
+                        <span class="menu-item-title">Register</span>
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#" title="Sign In">
-                        <span class="menu-item-title">Sign In</span>
-                    </a>
-                </li>
+                <!-- {% endif %} -->
                 <li class="menu-item">
                     <a class="menu-link" href="#" title="Contact Us">
                         <span class="menu-item-title">Contact Us</span>

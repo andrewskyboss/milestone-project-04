@@ -9,43 +9,43 @@
     "pk": 2,
     "model": "products.category",
     "fields": {
-        "name": "bed_bath",
-        "friendly_name": "Bed & Bath"
-    }
-}, {
-    "pk": 3,
-    "model": "products.category",
-    "fields": {
         "name": "clearance",
         "friendly_name": "Clearance"
     }
 }, {
-    "pk": 4,
+    "pk": 3,
     "model": "products.category",
     "fields": {
         "name": "deals",
         "friendly_name": "Deals"
     }
 }, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "gifts",
+        "friendly_name": "Gifts"
+    }
+}, {
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "essentials",
-        "friendly_name": "Essentials"
+        "name": "accessories",
+        "friendly_name": "Accessories"
     }
 }, {
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "jeans",
-        "friendly_name": "Jeans"
+        "name": "exercise_plan",
+        "friendly_name": "Exercise Plan"
     }
 }, {
     "pk": 7,
     "model": "products.category",
     "fields": {
-        "name": "kitchen_dining",
-        "friendly_name": "Kitchen & Dining"
+        "name": "nutrition_plan",
+        "friendly_name": "Nutrition Plan"
     }
 }, {
     "pk": 8,
@@ -58,7 +58,14 @@
     "pk": 9,
     "model": "products.category",
     "fields": {
-        "name": "shirts",
-        "friendly_name": "Shirts"
+        "name": "nutrition",
+        "friendly_name": "Nutrition"
+    }
+}, {
+    "pk": 10,
+    "model": "products.category",
+    "fields": {
+        "name": "t_shirts",
+        "friendly_name": "T Shirts"
     }
 }]

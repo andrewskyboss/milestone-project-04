@@ -73,8 +73,64 @@
         {% block content %}
         {% endblock %}
 
+        <footer>
+            <div class="row footer-container">
+                <div class="container-fluid newsletter-container">
+                    <h3 id="confirmation-title-email" class="confirm-title-email"></h3>
+                    <form class="newsletter-form" onsubmit="return newsletterMail(this);" method="POST" >
+                        <input type="text" name="emailNewsletters" id="emailNewsletters" class="form-input newsletters" placeholder="Enter email to sign up for our newsletter" required>
+                        <button type="submit" class="btn btn-secondary">Sign Up</button>
+                    </form>
+                </div>
+                <div class="container-fluid social-links-container">
+                    <div class="social-links-title"><h3>Connect with us</h3></div>
+                    <ul class="list-inline social-links text-center">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com">
+                                <i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com">
+                                <i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.twitter.com">
+                                <i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com">
+                                <i class="fa fa-youtube" aria-hidden="true" title="Youtube"></i>
+                                <span class="sr-only">Youtube</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.tripadvisor.ie">
+                                <i class="fa fa-tripadvisor" aria-hidden="true" title="Tripadvisor"></i>
+                                <span class="sr-only">Tripadvisor</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item css-verification">
+                            <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check CSS">
+                                <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="Valid CSS!" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
         {% block postloadjs %}
         {% endblock %}
+
+        
 
         {% block corejs %}
             <!-- Optional JavaScript -->

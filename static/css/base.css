@@ -163,10 +163,12 @@ section.container-fluid.bg-images > div > div > div .section-subtitle {
 	margin-bottom: 5px;
 	justify-content: flex-end;
 	padding-right: 100px;
+	/* border-bottom: 1px solid var(--color-brand-5); */
 }
 .menu-header-container.level-two {
 	height: calc(100% - 55px);
 	justify-content: center;
+	border-top: 1px solid var(--color-brand-5);
 }
 
 ul.menu-header {
@@ -210,7 +212,7 @@ ul.menu-header > li a {
 	width: 23vw;
 	height: 100%;
 	border-right: 1px solid var(--color-brand-5);
-	border-top: 1px solid var(--color-brand-5);
+	/* border-top: 1px solid var(--color-brand-5); */
 }
 .mobile-menu .navbar .menu-header-container.level-two ul li:nth-child(1) {
 	border-left: 1px solid var(--color-brand-5);

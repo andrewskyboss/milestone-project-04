@@ -9,7 +9,6 @@ from .models import Product, Plan
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
     products = Product.objects.all()
 
     context = {
@@ -18,12 +17,11 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
-def all_plans(request):
-    """ A view to show all products, including sorting and search queries """
+# def all_plans(request):
+#     """ A view to show all plans, including sorting and search queries """
+#     plans = Plan.objects.all()
 
-    plans = Plan.objects.all()
-
-    context = {
-        'plans': plans,
-    }
-    return render(request, 'products/plans.html', context)
+#     context = {
+#         'plans': plans,
+#     }
+#     return render(request, 'products/plans.html', context)

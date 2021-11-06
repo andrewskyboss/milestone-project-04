@@ -1,0 +1,49 @@
+[{
+    "pk": 1,
+    "model": "products.plan",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Arizona Original Bootcut Jeans",
+        "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+        "price": 53.99,
+        "category": 6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0709201205510679M.jpg"
+    }
+}, {
+    "pk": 2,
+    "model": "products.plan",
+    "fields": {
+        "sku": "pp5007310136",
+        "name": "Stylus Flare Jeans",
+        "description": "Add a little retro to your wardrobe to create fashion fun with our Stylus flare jeans. high rise flare leg 5-pockets 32\" inseam cotton/polyester/rayon/spandex washable imported ",
+        "price": 60.99,
+        "category": 6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1202201517023245M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP1202201517023245M.jpg"
+    }
+}, {
+    "pk": 3,
+    "model": "products.plan",
+    "fields": {
+        "sku": "pp5007310220",
+        "name": "Alyx Printed Maxi Skirt",
+        "description": "With a stretch-knit fabric and on-trend print, our Alyx maxi skirt is sure to be an instant favorite. 40\" length polyester/spandex hand wash, line dry imported ",
+        "price": 58.99,
+        "category": 8,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0325201617032536M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0325201617032536M.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.plan",
+    "fields": {
+        "sku": "pp5007320233",
+        "name": "St. John's Bay Ikat Sharkbite Tank Top",
+        "description": "Add our tank top to your warm-weather wardrobe, featuring a sharkbite hem and a flowy style that looks great with shorts or skinny jeans. roundneck sharkbite hem rayon washable imported petite: 30\" length misses: 32\" length",
+        "price": 36.99,
+        "category": 8,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0429201617074742M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0429201617074742M.jpg"
+    }
+}]

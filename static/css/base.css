@@ -395,9 +395,6 @@ ul.menu-header > li a {
 		height: 555px;
 	}
 
-	ul.menu-header {
-		/*height: auto;*/
-	}
 	.mobile-menu .navbar .menu-header-container.level-two ul li {
 		width: calc(50vw - 2px);
 		height: calc(50% - 2px);

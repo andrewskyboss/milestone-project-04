@@ -16,12 +16,3 @@ def all_products(request):
     }
     return render(request, 'products/products.html', context)
 
-
-def all_plans(request):
-    """ A view to show all plans, including sorting and search queries """
-    plans = Product.objects.all()
-
-    context = {
-        'plans': plans,
-    }
-    return render(request, 'products/plans.html', context)

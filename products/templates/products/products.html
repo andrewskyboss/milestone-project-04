@@ -15,6 +15,9 @@
         <div class="col section-col">
             <div class="section-title-group">
                 <h2 class="section-title">The CUBE shopping</h2>
+                {% if product.category %}
+                    <h3 class="section-subtitle">{{ product.category.friendly_name }}</h3>
+                {% endif %}
             </div>
         </div>
     </div>

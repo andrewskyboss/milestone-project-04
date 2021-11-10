@@ -22,17 +22,32 @@
 	<section class="container-fluid bg-images section-two content-shop">
 		<!-- part one -->
 		<div class="row justify-content-center align-items-center">
-			<div class="card col-lg-3 col-md-6 col-sm-12">
-				<img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h2 class="card-title title">name</h2>
-					<h3 class="subtitle">category</h3>
-					<p class="card-text description">description</p>
-					<p class="card-text sizes">sizes</p>
-					<p class="card-text price">price</p>
-					<a href="#" class="btn btn-primary btn-block">Add to cart</a>
-				</div>
-			</div>
+            {% for product in products %}
+                <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <!-- <img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap"> -->
+                    {% if product.image %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body">
+                        <h2 class="card-title title">{{ product.name }}</h2>
+                        {% if product.category %}
+                        <h3 class="subtitle">
+                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                {{ product.category.friendly_name }}
+                            </a>
+                        </h3>
+                        {% endif %}
+                        <p class="card-text price">${{ product.price }}</p>
+                        <a href="#" class="btn btn-primary btn-block">Add to cart</a>
+                    </div>
+                </div>
+            {% endfor %}
 
 			<div class="card col-lg-3 col-md-6 col-sm-12">
 				<img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap">
@@ -46,17 +61,6 @@
 				</div>
 			</div>
 
-			<div class="card col-lg-3 col-md-6 col-sm-12">
-				<img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h2 class="card-title title">name</h2>
-					<h3 class="subtitle">category</h3>
-					<p class="card-text description">description</p>
-					<p class="card-text sizes">sizes</p>
-					<p class="card-text price">price</p>
-					<a href="#" class="btn btn-primary btn-block">Add to cart</a>
-				</div>
-			</div>
             <div class="container">
                 <div class="row">
                     <div class="col">

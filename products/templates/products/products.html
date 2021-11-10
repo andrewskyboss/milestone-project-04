@@ -15,9 +15,7 @@
         <div class="col section-col">
             <div class="section-title-group">
                 <h2 class="section-title">The CUBE shopping</h2>
-                {% if product.category %}
-                    <h3 class="section-subtitle">{{ product.category.friendly_name }}</h3>
-                {% endif %}
+                <h3 class="section-subtitle">{{ product.category.friendly_name }}</h3>
             </div>
         </div>
     </div>
@@ -46,7 +44,7 @@
                     </a>
                 </h3>
                 {% endif %}
-                <p class="card-text price">${{ product.price }}</p>
+                <p class="card-text price">&#x20AC; {{ product.price }}</p>
                 <a href="{% url 'product_detail' product.id %}" class="btn btn-primary btn-block">More Details</a>
             </div>
         </div>

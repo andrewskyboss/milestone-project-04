@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="container-fluid bg-images section-one section-login section-shop">
+        <div class="row bg-images-overlay">
+            <div class="col section-col">
+                <div class="section-title-group">
+                    <h2 class="section-title">{{ product.name }}</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-images section-two content-shop">
+        <!-- part one -->
+        <!-- <div class="row justify-content-center align-items-center">
+            {% for product in products %}
+            <div class="card col-lg-3 col-md-6 col-sm-12">
+                {% if product.image %}
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body">
+                    <h2 class="card-title title">{{ product.name }}</h2>
+                    {% if product.category %}
+                    <h3 class="subtitle">
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            {{ product.category.friendly_name }}
+                        </a>
+                    </h3>
+                    {% endif %}
+                    <p class="card-text price">${{ product.price }}</p>
+                    <a href="#" class="btn btn-primary btn-block">Add to cart</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div> -->
+        <div class="row justify-content-center align-items-center content-first">
+			<div class="col col-lg-6 align-self-center visual-block">
+				<!-- <div class="section-content-group">
+					<h2 class="title"></h2>
+					<h3 class="subtitle"></h3>
+					<p class="description"></p>
+				</div> -->
+                {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                {% endif %}
+			</div>
+			<div class="col col-lg-6 align-self-center info-block">
+				<div class="section-content-group">
+                    <h3 class="subtitle">{{ product.name }}</h3>
+					<h2 class="title">&#x20AC; {{ product.price }}</h2>
+                    {% if product.category %}
+                    <h3 class="subtitle">
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </h3>
+                    {% endif %}
+					<p class="description">{{ product.description }}</p>
+					<a class="btn btn-outline-primary btn-lg" href="#">Shop Now</a>
+				</div>
+			</div>
+		</div>
+    </section>
+    <section class="container-fluid bg-images section-three section-shop section-last">
+        <div class="row bg-images-overlay">
+            <div class="col section-col">
+                <div class="section-title-group">
+                    <h2 class="section-title">The Cube Activities</h2>
+                    <a class="btn btn-outline-primary btn-lg" href="activities.html">View Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}

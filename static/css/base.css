@@ -143,19 +143,19 @@ section {
 	z-index: 1;
 }
 .section-one {
-	background-image: url("../images/alex-001.jpg");
+	background-image: url("/media/alex-001.jpg");
 	height: 100vh;
 }
 .section-one.section-login {
-	background-image: url("../images/gym-equipment-001.jpg");
+	background-image: url("/media/gym-equipment-001.jpg");
 	height: 50vh;
 }
 .section-one.section-shop {
-	background-image: url("../images/clothes-002.jpg");
+	background-image: url("/media/clothes-002.jpg");
 	height: 40vh;
 }
 .section-one.activities {
-	background-image: url("../images/gym-training-005.jpg");
+	background-image: url("/media/gym-training-005.jpg");
 	height: 100vh;
 }
 .section-two {
@@ -164,15 +164,15 @@ section {
 	height: auto;
 }
 .section-three {
-	background-image: url("../images/gym-training-005.jpg");
+	background-image: url("/media/gym-training-005.jpg");
 	height: 100vh;
 }
 .section-four {
-	background-image: url("../images/yoga-003.jpg");
+	background-image: url("/media/yoga-003.jpg");
 	height: 100vh;
 }
 .section-three.section-shop {
-	background-image: url("../images/clothes-003.jpg");
+	background-image: url("/media/clothes-003.jpg");
 	height: 40vh;
 }
 section.section-last {
@@ -238,22 +238,22 @@ section.section-two .content-third .visual-block {
 	background-size: cover;
 }
 section.section-two .content-first .visual-block {
-	background-image: url("../images/sport-food-007.jpg");
+	background-image: url("/media/sport-food-007.jpg");
 }
 section.section-two .content-second .visual-block {
-	background-image: url("../images/gym-equipment-006.jpg");
+	background-image: url("/media/gym-equipment-006.jpg");
 }
 section.section-two .content-third .visual-block {
-	background-image: url("../images/clothes-002.jpg");
+	background-image: url("/media/clothes-002.jpg");
 }
 section.section-two .visual-block.boot-camp {
-	background-image: url("../images/gym-training-001.jpg");
+	background-image: url("/media/gym-training-001.jpg");
 }
 section.section-two .visual-block.body-building {
-	background-image: url("../images/gym-equipment-001.jpg");
+	background-image: url("/media/gym-equipment-001.jpg");
 }
 section.section-two .visual-block.body-pump {
-	background-image: url("../images/gym-training-003.jpg");
+	background-image: url("/media/gym-training-003.jpg");
 }
 
 
@@ -363,7 +363,6 @@ section.container-fluid.bg-images > div > div > div .btn {
 	/*margin-bottom: 5px;*/
 	justify-content: flex-end;
 	padding-right: 100px;
-	/*border-bottom: 1px solid var(--color-brand-5);*/
 }
 .menu-header-container.level-two {
 	height: calc(100% - 55px);
@@ -403,16 +402,13 @@ ul.menu-header > li a {
 }
 
 .mobile-menu .navbar .menu-header-container ul li {
-	/*width: 15vw;*/
 	width: auto;
 	height: 100%;
-	/*border-right: 1px solid var(--color-brand-5);*/
 }
 .mobile-menu .navbar .menu-header-container.level-two ul li {
 	width: 23vw;
 	height: 100%;
 	border-right: 1px solid var(--color-brand-5);
-	/*border-top: 1px solid var(--color-brand-5);*/
 }
 .mobile-menu .navbar .menu-header-container.level-two ul li:nth-child(1) {
 	border-left: 1px solid var(--color-brand-5);
@@ -445,7 +441,6 @@ ul.menu-header > li a {
 }
 #main-menu-level-one > ul.menu-header > li:hover a,
 #main-menu-level-two > ul.menu-header > li:hover a {
-	/*background-color: var(--color-brand-1);*/
 	color: var(--color-white)!important;
 	font-weight: 400!important;
 	box-shadow: inset 0 -200px 0 0 var(--color-brand-1);
@@ -456,8 +451,6 @@ ul.menu-header > li a {
 /*--------- Navigation 2 -----------*/
 
 .header-tags.left {
-	/*display: none;*/
-	/*background-color: var(--color-brand-1);*/
 	position: fixed;
 	top: 0px;
 	right: 0;
@@ -475,21 +468,15 @@ ul.menu-header > li a {
 .header-tags .mobile-menu-trigger i {
 	font-size: 50px;
 }
-/*.header-tags .mobile-menu-trigger.mobile-menu-visible .fa-icon-mobile-menu-hidden {
-	display: none;
-}*/
+
 .header-tags .mobile-menu-trigger.mobile-menu-visible {
 	background-color: transparent;
-	/*transform: translateX(250px);*/
-	/*transition: transform 0.8s ease;*/
 }
 .header-tags .mobile-menu-trigger {
 	font-size: 40px;
 	padding: 15px 25px;
 	cursor: pointer;
 	transition: 0.5s;
-	/*transform: translateX(0px);
-	transition: transform 0.8s ease;*/
 }
 .header-tags .mobile-menu-trigger .menu-hamburger {
 	display: inline-block;
@@ -539,14 +526,6 @@ ul.menu-header > li a {
 	color: var(--color-brand-1);
 	padding: 25px 30px;
 }
-/*.header-tags .mobile-menu-trigger.mobile-menu-hidden .fa-icon-mobile-menu-visible {
-	display: none;
-}
-.header-tags .mobile-menu-trigger.mobile-menu-hidden .fa-icon-mobile-menu-hidden {
-	display: inline-block;
-	color: var(--color-brand-1);
-	padding: 25px 30px;
-}*/
 
 .mobile-menu {
 	display: none;
@@ -569,8 +548,6 @@ ul.menu-header > li a {
 	transform: translateY(0%);
 }
 .mobile-menu .navbar {
-	/*margin-top: 20px;
-	padding-top: 30px;*/
 	height: 100%;
 	width: 100vw;
 	padding: 0;
@@ -585,10 +562,8 @@ footer {
 	height: 350px;
 }
 footer .footer-container {
-	/*margin-top: 60px;*/
 	padding-top: 20px;
 	padding-bottom: 60px;
-	/*box-shadow: 0px 3px 20px -10px var(--color-brand-6);*/
 	background-color: var(--color-brand-5);
 	height: 100%;
 }
@@ -641,20 +616,11 @@ footer .newsletter-container .newsletter-form button {
 	margin-right: 20px!important;
 	margin-bottom: 20px;
 }
-/*.social-links-container ul li.css-verification a img{
-	transform: scale(1);
-	transition: all 0.8s ease;
-}
-.social-links-container ul li.css-verification a:hover img{
-	transform: scale(1.2);
-}*/
 .social-links-container ul li a {
 	color: var(--color-white);
-	/*transition: 0.5s;*/
 }
 .social-links-container ul li a:hover {
 	color: var(--color-brand-2);
-	/*box-shadow: inset 0 -66px 0 0 var(--color-brand-1);*/
 }
 .social-links-container ul li a:hover i {
 	transform: scale(1.2);

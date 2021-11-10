@@ -10,11 +10,72 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ products }}
+    <section class="container-fluid bg-images section-one section-login section-shop">
+		<div class="row bg-images-overlay">
+			<div class="col section-col">
+				<div class="section-title-group">
+					<h2 class="section-title">The CUBE shopping</h2>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section class="container-fluid bg-images section-two content-shop">
+		<!-- part one -->
+		<div class="row justify-content-center align-items-center">
+			<div class="card col-lg-3 col-md-6 col-sm-12">
+				<img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title title">name</h2>
+					<h3 class="subtitle">category</h3>
+					<p class="card-text description">description</p>
+					<p class="card-text sizes">sizes</p>
+					<p class="card-text price">price</p>
+					<a href="#" class="btn btn-primary btn-block">Add to cart</a>
+				</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-6 col-sm-12">
+				<img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title title">name</h2>
+					<h3 class="subtitle">category</h3>
+					<p class="card-text description">description</p>
+					<p class="card-text sizes">sizes</p>
+					<p class="card-text price">price</p>
+					<a href="#" class="btn btn-primary btn-block">Add to cart</a>
+				</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-6 col-sm-12">
+				<img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title title">name</h2>
+					<h3 class="subtitle">category</h3>
+					<p class="card-text description">description</p>
+					<p class="card-text sizes">sizes</p>
+					<p class="card-text price">price</p>
+					<a href="#" class="btn btn-primary btn-block">Add to cart</a>
+				</div>
+			</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        {{ products }}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+		</div>
+	</section>
+	<section class="container-fluid bg-images section-three section-shop section-last">
+		<div class="row bg-images-overlay">
+			<div class="col section-col">
+				<div class="section-title-group">
+					<h2 class="section-title">The Cube Activities</h2>
+					<!-- <h3 class="section-subtitle">36 types of activities are available</h3> -->
+					<!-- <p class="section-description"> plus a large body-building and cardio fitness room</p> -->
+					<a class="btn btn-outline-primary btn-lg" href="activities.html">View Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}

@@ -65,6 +65,13 @@
     "pk": 10,
     "model": "products.category",
     "fields": {
+        "name": "membership",
+        "friendly_name": "Membership"
+    }
+}, {
+    "pk": 11,
+    "model": "products.category",
+    "fields": {
         "name": "t_shirts",
         "friendly_name": "T Shirts"
     }

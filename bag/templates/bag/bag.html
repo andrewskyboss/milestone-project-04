@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid bg-images section-one section-login section-shop">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">Shopping Bag</h2>
+                <h3 class="section-subtitle"></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-two content-shop">
+    <h2 class="section-title">The CUBE</h2>
+    <!-- part one -->
+    <div class="row justify-content-center align-items-center">
+        
+
+        <div class="card col-lg-3 col-md-6 col-sm-12">
+           
+
+            {% if bag_items %}
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in bag_items %}
+                    <tr>
+                        <td class="py-3">
+
+                        </td>
+                        <td class="py-3">
+                            <!-- <p class="my-0">${{ item.product.price }}</p> -->
+                        </td>
+                        <td class="py-3 w-25">
+                           
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"></p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                    </tr>
+                    <tr>
+                    </tr>
+                </table>
+            </div>
+            {% else %}
+            <p class="lead mb-5">Your bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-primary btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-three section-shop section-last">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">The Cube Activities</h2>
+                <!-- <h3 class="section-subtitle">36 types of activities are available</h3> -->
+                <!-- <p class="section-description"> plus a large body-building and cardio fitness room</p> -->
+                <a class="btn btn-outline-primary btn-lg" href="activities.html">View Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

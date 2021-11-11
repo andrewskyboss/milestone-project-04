@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} menu-link" href="#" title="Shopping Bag">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} menu-link" href="{% url 'view_bag' %}" title="Shopping Bag">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-cart"></i></div>
                             <p class="my-0">

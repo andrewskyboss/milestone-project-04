@@ -2,98 +2,106 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 
     <!-- Required meta tags -->
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="The CUBE | GYM & Fitness Club | Milestone Project 4 | Python based project" />
-        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.svg' %}">
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="The CUBE | GYM & Fitness Club | Milestone Project 4" />
-        <meta property="og:description" content="The CUBE | GYM & Fitness Club | Milestone Project 4 | Python based project" />
-        <meta property="og:url" content="https://andrewskyboss.github.io/milestone-project-04" />
-        <meta property="og:site_name" content="The CUBE | GYM & Fitness Club" />
-        <meta property="og:image" content="https://andrewskyboss.github.io/milestone-project-04/assets/images/gym-training-003.jpg" />
-        <meta property="og:image:width" content="1920" />
-        <meta property="og:image:height" content="1080" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The CUBE | GYM & Fitness Club | Milestone Project 4 | Python based project" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.svg' %}">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The CUBE | GYM & Fitness Club | Milestone Project 4" />
+    <meta property="og:description"
+        content="The CUBE | GYM & Fitness Club | Milestone Project 4 | Python based project" />
+    <meta property="og:url" content="https://andrewskyboss.github.io/milestone-project-04" />
+    <meta property="og:site_name" content="The CUBE | GYM & Fitness Club" />
+    <meta property="og:image"
+        content="https://andrewskyboss.github.io/milestone-project-04/media/gym-training-003.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-        <!-- Bootstrap CSS -->
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="
         sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
-    
+
     <title>The CUBE | GYM & Fitness Club {% block extra_title %}{% endblock %}</title>
     <link rel="canonical" href="https://andrewskyboss.github.io/milestone-project-04" />
-    </head>
-    <body>
-        <header class="container-fluid fixed-top">
-            <div class="row header-row">
-                <div class="header-logo">
-                    <a href="{% url 'home' %}" class="header-logo-link" title="The CUBE | GYM & Fitness Club">
-                        <img src="{% static 'img/gym-logo.svg' %}" alt="logo icon"></a>
-                </div>
-                <div class="header-tags left">
-                    <a class="header-tag mobile-menu-trigger mobile-menu-hidden" >
-                        <div class="menu-hamburger">
-                            <span class="menu-hamburger-bars">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                {% include 'includes/main-nav.html' %}
+</head>
+
+<body>
+    <header class="container-fluid fixed-top">
+        <div class="row header-row">
+            <div class="header-logo">
+                <a href="{% url 'home' %}" class="header-logo-link" title="The CUBE | GYM & Fitness Club">
+                    <img src="{% static 'img/gym-logo.svg' %}" alt="logo icon"></a>
             </div>
-        </header>
-        {% if messages %}
-            <div class="message-container"></div>
-        {% endif %}
+            <div class="header-tags left">
+                <a class="header-tag mobile-menu-trigger mobile-menu-hidden">
+                    <div class="menu-hamburger">
+                        <span class="menu-hamburger-bars">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            {% include 'includes/main-nav.html' %}
+        </div>
+    </header>
+    {% if messages %}
+    <div class="message-container"></div>
+    {% endif %}
 
 
-        {% block page_header %}
-        {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-        {% include 'includes/footer.html' %}
+    {% include 'includes/footer.html' %}
 
-        {% block postloadjs %}
-        {% endblock %}
+    {% block postloadjs %}
+    {% endblock %}
 
-        
 
-        {% block corejs %}
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="{% static 'js/scripts.js' %}"></script>
-        {% endblock %}
 
-        {% block extra_js %}
-        {% endblock %}
+    {% block corejs %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+    {% endblock %}
 
-  </body>
+    {% block extra_js %}
+    {% endblock %}
+
+</body>
+
 </html>

@@ -214,9 +214,11 @@ section.section-four div > div > div.section-form-group form {
 	justify-content: center;
 	width: 80%;
 }
+section.section-four > div > div > div > p > a,
 section.section-four div > div > div.section-form-group form a {
 	color: var(--color-brand-2);
 }
+
 section.section-four > div > div > div > .description {
 	color: var(--color-white);
 }
@@ -348,6 +350,9 @@ section.section-two > div > div.visual-block .section-content-group {
 	width: calc(100% + 2px);
 	height: calc(100% + 2px);
 	padding: 10%;
+}
+section.section-two > div > div.info-block > div > h3 > a {
+	color: var(--color-brand-2)!important;
 }
 section.section-two > div > div.visual-block .section-content-group .subtitle,
 section.section-two > div > div.visual-block .section-content-group .description,

@@ -40,7 +40,7 @@
                 {% if product.category %}
                 <h3 class="subtitle">
                     <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                        {{ product.category.friendly_name }}
+                        <i class="fas fa-barcode"></i> {{ product.category.friendly_name }}
                     </a>
                 </h3>
                 {% endif %}

@@ -1,11 +1,24 @@
+
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
   </head>
   <body>
+    <section class="container-fluid bg-images section-one section-login">
+      <div class="row bg-images-overlay">
+        <div class="col section-col">
+          <div class="section-title-group">
+            <h2 class="section-title">Welcome to The CUBE</h2>
+            <h3 class="section-subtitle">GYM & Fitness Club</h3>
+            <!-- <a class="btn btn-outline-primary btn-lg" href="#">Buy a Membership</a> -->
+          </div>	
+        </div>
+      </div>
+    </section>
     {% block body %}
 
     {% if messages %}

@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <!-- Required meta tags -->
+     {% block meta %}
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="The CUBE | GYM & Fitness Club | Milestone Project 4 | Python based project" />
+     <link rel="shortcut icon" type="image/x-icon" href="#">
+     <meta property="og:locale" content="en_US" />
+     <meta property="og:type" content="website" />
+     <meta property="og:title" content="The CUBE | GYM & Fitness Club | Milestone Project 4" />
+     <meta property="og:description" content="The CUBE | GYM & Fitness Club | Milestone Project 4 | Python based project" />
+     <meta property="og:url" content="https://andrewskyboss.github.io/milestone-project-04" />
+     <meta property="og:site_name" content="The CUBE | GYM & Fitness Club" />
+     <meta property="og:image" content="https://andrewskyboss.github.io/milestone-project-04/assets/images/gym-training-003.jpg" />
+     <meta property="og:image:width" content="1920" />
+     <meta property="og:image:height" content="1080" />
+ {% endblock %}
+
+ {% block corecss %}
+ <!-- Bootstrap CSS -->
+ <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="
+ sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link rel="stylesheet" href="">
+ 
+{% endblock %}
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
   </head>
   <body>
+    <header class="container-fluid fixed-top">
+      <div class="row header-row">
+          <div class="header-logo">
+              <a href="{% url 'home' %}" class="header-logo-link" title="The CUBE | GYM & Fitness Club">
+                  <img src="" alt="logo icon"></a>
+          </div>
+          <div class="header-tags left">
+              <a class="header-tag mobile-menu-trigger mobile-menu-hidden" >
+                  <div class="menu-hamburger">
+                      <span class="menu-hamburger-bars">
+                          <i></i>
+                          <i></i>
+                          <i></i>
+                      </span>
+                  </div>
+              </a>
+          </div>
+          {% include 'includes/main-nav.html' %}
+      </div>
+  </header>
     {% block body %}
+    <section class="container-fluid bg-images section-one section-login">
+      <div class="row bg-images-overlay">
+        <div class="col section-col">
+          <div class="section-title-group">
+            <h2 class="section-title">Welcome to The CUBE</h2>
+            <h3 class="section-subtitle">GYM & Fitness Club</h3>
+            <!-- <a class="btn btn-outline-primary btn-lg" href="#">Buy a Membership</a> -->
+          </div>	
+        </div>
+      </div>
+    </section>
 
     {% if messages %}
     <div>

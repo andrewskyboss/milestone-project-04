@@ -1,21 +1,46 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
+
+{% load static %}
 
 {% load i18n %}
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
+<section class="container-fluid bg-images section-one section-login">
+  <div class="row bg-images-overlay">
+    <div class="col section-col">
+      <div class="section-title-group">
+        <h2 class="section-title">{% trans "Sign Out" %}</h2>
+        <h3 class="section-subtitle">The CUBE | GYM & Fitness Club</h3>
+        <!-- <a class="btn btn-outline-primary btn-lg" href="#">Buy a Membership</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid bg-images section-four section-last">
+  <div class="row bg-images-overlay">
+    <div class="col section-col section-form">
+      <div class="col-lg-6 col-md-8 col-sm-12 section-form-group">
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+        <p class="description">{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+        <h2 class="section-title">{% trans "Sign Out" %}</h2>
+        <!-- <h3 class="section-subtitle">36 types of activities are available</h3>
+        <p class="section-description"> plus a large body-building and cardio fitness room</p>
+        <a class="btn btn-outline-primary btn-lg" href="#">View Now</a> -->
+
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <button class="btn btn-outline-primary btn-lg" type="submit">{% trans 'Sign Out' %}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 {% endblock %}

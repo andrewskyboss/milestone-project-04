@@ -197,20 +197,51 @@ section.section-last {
 }
 section.section-four div > div > div.section-form-group {
 	background-color: var(--color-brand-3);
-	height: 70%;
+	height: auto;
+	min-height: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 5%;
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
 }
 section.section-four div > div > div.section-form-group form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 80%;
 }
+section.section-four div > div > div.section-form-group form a {
+	color: var(--color-brand-2);
+}
+section.section-four > div > div > div > .description {
+	color: var(--color-white);
+}
+section.section-four > div > div > div > form > p > label {
+	color: var(--color-white);
+}
+section.section-four > div > div > div > form.login > p:nth-child(2) > label,
+section.section-four > div > div > div > form.login > p:nth-child(3) > label {
+	display: none;
+}
+section.section-four > div > div > div > form > p {
+	width: 100%;
+}
+section.section-four > div > div > div > form > p > input {
+	width: 100%;
+	padding: 10px 20px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid var(--color-brand-2);
+	outline: none;
+}
+section.section-four > div > div > div > form > p > input::placeholder {
+	color: var(--color-brand-2);
+}
+
 section.section-two > .content-first,
 section.section-two > .content-second,
 section.section-two > .content-third {

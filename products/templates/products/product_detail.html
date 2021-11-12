@@ -2,26 +2,26 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <section class="container-fluid bg-images section-one section-login section-shop">
-        <div class="row bg-images-overlay">
-            <div class="col section-col">
-                <div class="section-title-group">
-                    <h2 class="section-title">{{ product.name }}</h2>
-                </div>
+<section class="container-fluid bg-images section-one section-login section-shop">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">{{ product.name }}</h2>
             </div>
         </div>
-    </section>
-    <section class="container-fluid bg-images section-two content-shop">
-        <!-- part one -->
-        <!-- <div class="row justify-content-center align-items-center">
+    </div>
+</section>
+<section class="container-fluid bg-images section-two content-shop">
+    <!-- part one -->
+    <!-- <div class="row justify-content-center align-items-center">
             {% for product in products %}
             <div class="card col-lg-3 col-md-6 col-sm-12">
                 {% if product.image %}
@@ -48,51 +48,77 @@
             </div>
             {% endfor %}
         </div> -->
-        <div class="row justify-content-center align-items-center content-first">
-			<div class="col col-lg-6 align-self-center visual-block">
-				<!-- <div class="section-content-group">
+    <div class="row justify-content-center align-items-center content-first">
+        <div class="col col-lg-6 align-self-center visual-block">
+            <!-- <div class="section-content-group">
 					<h2 class="title"></h2>
 					<h3 class="subtitle"></h3>
 					<p class="description"></p>
 				</div> -->
-                {% if product.image %}
-                    <a href="{{ product.image.url }}" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% if product.image %}
+            <a href="{{ product.image.url }}" target="_blank">
+                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+            </a>
+            {% else %}
+            <a href="">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+            </a>
+            {% endif %}
+        </div>
+        <div class="col col-lg-6 align-self-center info-block">
+            <div class="section-content-group">
+                <h3 class="subtitle">{{ product.name }}</h3>
+                <h2 class="title">&#x20AC; {{ product.price }}</h2>
+                {% if product.category %}
+                <h3 class="subtitle">
+                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-barcode"></i> {{ product.category.friendly_name }}
                     </a>
-                    {% else %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                    </a>
+                </h3>
                 {% endif %}
-			</div>
-			<div class="col col-lg-6 align-self-center info-block">
-				<div class="section-content-group">
-                    <h3 class="subtitle">{{ product.name }}</h3>
-					<h2 class="title">&#x20AC; {{ product.price }}</h2>
-                    {% if product.category %}
-                    <h3 class="subtitle">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-barcode"></i> {{ product.category.friendly_name }}
-                        </a>
-                    </h3>
-                    {% endif %}
-					<p class="description">{{ product.description }}</p>
-					<a class="btn btn-outline-primary btn-lg" href="#">Shop Now</a>
-				</div>
-			</div>
-		</div>
-    </section>
-    <section class="container-fluid bg-images section-three section-shop section-last">
-        <div class="row bg-images-overlay">
-            <div class="col section-col">
-                <div class="section-title-group">
-                    <h2 class="section-title">The Cube Activities</h2>
-                    <a class="btn btn-outline-primary btn-lg" href="activities.html">View Now</a>
-                </div>
+                <p class="description">{{ product.description }}</p>
+                <!-- <a class="btn btn-outline-primary btn-lg" href="#">Shop Now</a> -->
+                <form class="form" action="" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="description"><strong>Quantity:</strong></p>
+                            <div class="form-group w-100">
+                                <div class="input-group">
+                                    <input class="form-control qty_input rounded-0" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <a href="{% url 'products' %}" class="btn btn-outline-primary btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-outline-primary btn-lg" value="Add to Bag">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<section class="container-fluid bg-images section-three section-shop section-last">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">The Cube Activities</h2>
+                <a class="btn btn-outline-primary btn-lg" href="activities.html">View Now</a>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
-
 {% block postloadjs %}
+{{ block.super }}
+
 {% endblock %}

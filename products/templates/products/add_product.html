@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid bg-images section-one section-login section-shop">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">Add a Product</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-two content-shop">
+    
+    <div class="row justify-content-center align-items-center content-first">
+        <div class="col col-lg-6 align-self-center visual-block">
+            <!-- <div class="section-content-group">
+					<h2 class="title"></h2>
+					<h3 class="subtitle"></h3>
+					<p class="description"></p>
+				</div> -->
+
+        </div>
+        <div class="col col-lg-6 align-self-center info-block">
+            <div class="section-content-group">
+                <h3 class="subtitle"></h3>
+                <h2 class="title">&#x20AC;</h2>
+                <p class="description"></p>
+                <!-- <a class="btn btn-outline-primary btn-lg" href="#">Shop Now</a> -->
+                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a class="btn btn-outline-primary btn-lg" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn btn-outline-primary btn-lg" type="submit">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-three section-shop section-last">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">The Cube Activities</h2>
+                <a class="btn btn-outline-primary btn-lg" href="activities.html">View Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+
+{% endblock %}

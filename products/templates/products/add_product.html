@@ -19,24 +19,15 @@
         </div>
     </div>
 </section>
-<section class="container-fluid bg-images section-two content-shop">
-
-    <div class="row justify-content-center align-items-center content-first">
-        <div class="col col-lg-6 align-self-center visual-block">
-            <!-- <div class="section-content-group">
-					<h2 class="title"></h2>
-					<h3 class="subtitle"></h3>
-					<p class="description"></p>
-				</div> -->
-
-        </div>
-        <div class="col col-lg-6 align-self-center info-block">
-            <div class="section-content-group">
-                <h3 class="subtitle"></h3>
+<section class="container-fluid bg-images section-four">
+    <div class="row bg-images-overlay">
+        <div class="col section-col section-form">
+            <div class="col-lg-6 col-md-8 col-sm-12 section-form-group">
+                <!-- <h3 class="subtitle"></h3>
                 <h2 class="title">&#x20AC;</h2>
-                <p class="description"></p>
+                <p class="description"></p> -->
                 <!-- <a class="btn btn-outline-primary btn-lg" href="#">Shop Now</a> -->
-                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_product' %}" class="form add_product" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">

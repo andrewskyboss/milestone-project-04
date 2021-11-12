@@ -51,7 +51,7 @@
         <!-- <h3 class="section-subtitle">36 types of activities are available</h3>
         <p class="section-description"> plus a large body-building and cardio fitness room</p>
         <a class="btn btn-outline-primary btn-lg" href="#">View Now</a> -->
-        <form class="login " method="POST" action="{% url 'account_login' %}">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
           {{ form.as_p }}
           {% if redirect_field_value %}

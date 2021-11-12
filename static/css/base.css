@@ -49,6 +49,9 @@ h3 {
 	font-size: var(--size-subtitle);
 	color: var(--color-brand-3);
 }
+h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
 
 h1,
 h2,
@@ -57,6 +60,7 @@ h3 {
 	padding: 10px;
 	text-align: center;
 }
+
 
 p {
 	text-align: justify;
@@ -80,6 +84,13 @@ img {
 }
 .text-info {
 	color: var(--color-brand-2)!important;
+	font-family: 'Oswald', sans-serif;
+}
+.text-danger {
+	color: var(--color-brand-1)!important;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
 }
 
 .btn.btn-primary {
@@ -111,6 +122,12 @@ img {
 	border: 2px solid var(--color-brand-2);
 	background-color: transparent;
 	transition: 0.5s;
+}
+.increment-qty,
+.decrement-qty {
+	margin-top: 0!important;
+	padding: 0px 20px!important;
+	animation: none!important;
 }
 
 .btn.btn-outline-primary:hover,
@@ -228,7 +245,8 @@ section {
 
 .section-four {
 	background-image: url("/media/yoga-003.jpg");
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
 }
 
 .section-three.section-shop {
@@ -253,6 +271,7 @@ section.section-last {
 .bg-images-overlay {
 	width: 100%;
 	height: 100%;
+	position: absolute;
 	margin: 0;
 	background: linear-gradient(180deg,
 			rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.5832800704441714) 50%,
@@ -261,6 +280,8 @@ section.section-last {
 
 section.section-four div>div>div.section-form-group {
 	background-color: var(--color-brand-3);
+	top: 5%;
+	position: absolute;
 	height: auto;
 	min-height: 70%;
 	display: flex;
@@ -278,6 +299,24 @@ section.section-four div>div>div.section-form-group form {
 	align-items: center;
 	justify-content: center;
 	width: 80%;
+}
+.form-group {
+	width: 100%;
+}
+.form-group label {
+	color: var(--color-brand-2);
+}
+textarea.form-control {
+	background-color: var(--color-brand-3-b);
+}
+.form-control {
+	background-color: transparent;
+	border: none;
+	color: var(--color-white);
+	border-bottom: 1px solid var(--color-brand-2);
+}
+.form-control::placeholder {
+	color: var(--color-brand-2);
 }
 
 section.section-four>div>div>div>p>a,
@@ -475,6 +514,10 @@ section.container-fluid.bg-images>div>div>div .section-description {
 section.container-fluid.bg-images>div>div>div .btn {
 	margin-top: 20px;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.0s;
+}
+.table thead th {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
 }
 
 .row {

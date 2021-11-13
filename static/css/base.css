@@ -173,8 +173,8 @@ img {
 /* -------------- bootstrap toasts -------*/
 .message-container {
 	position: fixed;
-	top: 100px;
-	right: 40px;
+	top: 50px;
+	right: 100px;
 	z-index: 100000000;
 }
 
@@ -184,6 +184,15 @@ img {
 
 .toast-capper {
 	height: 2px;
+}
+.message-container > div > .toast-header > strong > h4.title {
+	color: var(--color-brand-3-a);
+}
+.message-container > div > .toast-header > strong > h4.red {
+	color: var(--color-brand-1);
+}
+.message-container > div > .toast-header > strong > h4.orange {
+	color: var(--color-brand-2);
 }
 
 body {
@@ -300,6 +309,15 @@ section.section-last {
 			rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.5832800704441714) 50%,
 			rgba(0, 0, 0, 0.7124935535902388) 65%, rgba(0, 0, 0, 0.9) 100%);
 }
+.section-form-background {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	background: linear-gradient(180deg,
+			rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.5832800704441714) 50%,
+			rgba(0, 0, 0, 0.7124935535902388) 65%, rgba(0, 0, 0, 0.9) 100%);
+}
 
 section.section-four div>div>div.section-form-group {
 	background-color: var(--color-brand-3);
@@ -314,6 +332,9 @@ section.section-four div>div>div.section-form-group {
 	flex-wrap: wrap;
 	padding: 5%;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
+}
+section.section-four div.section-form-background>div>div.section-form-group {
+	position: relative;
 }
 
 section.section-four div>div>div.section-form-group form {
@@ -332,19 +353,26 @@ section.section-four div>div>div.section-form-group form {
 	color: var(--color-brand-2);
 }
 
-textarea.form-control {
+form.edit-product .form-group textarea.form-control,
+form.add_product .form-group textarea.form-control {
 	background-color: var(--color-brand-3-b);
 }
 
-.form-control {
+form.edit_product .form-group .form-control,
+form.add_product .form-group .form-control {
 	background-color: transparent;
 	border: none;
 	color: var(--color-white);
 	border-bottom: 1px solid var(--color-brand-2);
 }
-
-.form-control::placeholder {
+form.edit_product .form-group .form-control::placeholder,
+form.add_product .form-group .form-control::placeholder {
 	color: var(--color-brand-2);
+}
+select:hover option {
+	background: var(--color-brand-3);
+	color: var(--color-white);
+	padding: 5px;
 }
 
 section.section-four>div>div>div>p>a,

@@ -58,18 +58,11 @@
     "pk": 9,
     "model": "products.category",
     "fields": {
-        "name": "nutrition",
-        "friendly_name": "Nutrition"
-    }
-}, {
-    "pk": 10,
-    "model": "products.category",
-    "fields": {
         "name": "membership",
         "friendly_name": "Membership"
     }
 }, {
-    "pk": 11,
+    "pk": 10,
     "model": "products.category",
     "fields": {
         "name": "t_shirts",

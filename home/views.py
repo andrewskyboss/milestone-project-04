@@ -9,3 +9,23 @@ from django.shortcuts import render
 def index(request):
     """ A view for index page """
     return render(request, 'home/index.html')
+
+
+def activities(request):
+    """ A view for activities page """
+    return render(request, 'home/activities.html')
+
+
+def coaches(request):
+    """ A view for coaches page """
+    return render(request, 'home/coaches.html')
+
+
+def gym(request):
+    """ A view for gym page """
+    return render(request, 'home/gym.html')
+
+
+def timetable(request):
+    """ A view for timetable page """
+    return render(request, 'home/timetable.html')

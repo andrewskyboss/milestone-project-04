@@ -50,11 +50,6 @@
         </div> -->
     <div class="row justify-content-center align-items-center content-first">
         <div class="col col-lg-6 align-self-center visual-block">
-            <!-- <div class="section-content-group">
-					<h2 class="title"></h2>
-					<h3 class="subtitle"></h3>
-					<p class="description"></p>
-				</div> -->
             {% if product.image %}
             <a href="{{ product.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -139,5 +134,5 @@
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
-
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

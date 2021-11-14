@@ -90,6 +90,10 @@ img {
 	color: var(--color-brand-2) !important;
 	font-family: 'Oswald', sans-serif;
 }
+.update-link,
+.remove-item {
+	cursor: pointer;
+}
 
 .text-danger {
 	color: var(--color-brand-1) !important;

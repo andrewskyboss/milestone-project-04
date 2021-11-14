@@ -248,6 +248,15 @@ section {
 	background-image: url("/media/alex-001.jpg");
 	height: 100vh;
 }
+.coaches {
+	background-image: url("/media/personal-trainer-001.jpg");
+}
+.gym-background {
+	background-image: url("/media/gym-equipment-003.jpg");
+}
+.timetable-background {
+	background-image: url("/media/sport-food-003.jpg");
+}
 
 .section-one.section-login {
 	background-image: url("/media/gym-equipment-001.jpg");

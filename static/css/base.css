@@ -90,6 +90,7 @@ img {
 	color: var(--color-brand-2) !important;
 	font-family: 'Oswald', sans-serif;
 }
+
 .update-link,
 .remove-item {
 	cursor: pointer;
@@ -101,6 +102,7 @@ img {
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
 }
+
 .text-edit {
 	color: var(--color-brand-2) !important;
 	text-transform: uppercase;
@@ -195,13 +197,16 @@ img {
 .toast-capper {
 	height: 2px;
 }
-.message-container > div > .toast-header > strong > h4.title {
+
+.message-container>div>.toast-header>strong>h4.title {
 	color: var(--color-brand-3-a);
 }
-.message-container > div > .toast-header > strong > h4.red {
+
+.message-container>div>.toast-header>strong>h4.red {
 	color: var(--color-brand-1);
 }
-.message-container > div > .toast-header > strong > h4.orange {
+
+.message-container>div>.toast-header>strong>h4.orange {
 	color: var(--color-brand-2);
 }
 
@@ -258,12 +263,15 @@ section {
 	background-image: url("/media/alex-001.jpg");
 	height: 100vh;
 }
+
 .coaches {
 	background-image: url("/media/personal-trainer-001.jpg");
 }
+
 .gym-background {
 	background-image: url("/media/gym-equipment-003.jpg");
 }
+
 .timetable-background {
 	background-image: url("/media/sport-food-003.jpg");
 }
@@ -285,7 +293,7 @@ section {
 
 .section-two {
 	/*background-color: var(--color-brand-4);*/
-	/*min-height: 80vh;*/
+	min-height: 80vh;
 	height: auto;
 }
 
@@ -303,6 +311,15 @@ section {
 .section-three.section-shop {
 	background-image: url("/media/clothes-003.jpg");
 	height: 40vh;
+}
+
+.link-to-shop {
+	background-image: url("/media/clothes-003.jpg");
+	height: 70vh;
+}
+
+.coaches-content {
+	background-image: url("/media/gym-equipment-004.jpg");
 }
 
 section.section-last {
@@ -328,6 +345,7 @@ section.section-last {
 			rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.5832800704441714) 50%,
 			rgba(0, 0, 0, 0.7124935535902388) 65%, rgba(0, 0, 0, 0.9) 100%);
 }
+
 .section-form-background {
 	position: relative;
 	width: 100%;
@@ -352,6 +370,7 @@ section.section-four div>div>div.section-form-group {
 	padding: 5%;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
 }
+
 section.section-four div.section-form-background>div>div.section-form-group {
 	position: relative;
 }
@@ -384,10 +403,12 @@ form.add_product .form-group .form-control {
 	color: var(--color-white);
 	border-bottom: 1px solid var(--color-brand-2);
 }
+
 form.edit_product .form-group .form-control::placeholder,
 form.add_product .form-group .form-control::placeholder {
 	color: var(--color-brand-2);
 }
+
 select:hover option {
 	background: var(--color-brand-3);
 	color: var(--color-white);
@@ -441,6 +462,49 @@ section.section-two.content-shop {
 	background-color: var(--color-white);
 	height: auto;
 	min-height: 50vh;
+}
+
+section.section-two>.for-coaches {
+	height: auto;
+	position: relative;
+	/* min-height: 80vh; */
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section.coaches-content>div>div.single-card-color {
+	height: inherit;
+	background-color: var(--color-brand-3);
+	margin: 10px;
+	padding: 0;
+	border-radius: 0;
+	overflow: hidden;
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
+}
+
+section.coaches-content>div>div.single-card-color:nth-child(2) {
+	animation-delay: 0.5s;
+}
+
+section.coaches-content>div>div>div.card-img-top {
+	height: 40vh;
+	overflow: hidden;
+	position: relative;
+}
+
+section.coaches-content>div>div>div.card-img-top .card-imgage {
+	height: auto;
+	width: 100%;
+	position: absolute;
+	bottom: -20%;
+
+}
+
+section.coaches-content>div>div>div.card-body>.subtitle,
+section.coaches-content>div>div>div.card-body>.description,
+section.coaches-content>div>div>div.card-body>.contact {
+	text-align: center;
+	color: var(--color-white);
 }
 
 /*section.section-two > .content-second {
@@ -596,10 +660,11 @@ section.container-fluid.bg-images>div>div>div .btn {
 	font-family: 'Oswald', sans-serif;
 }
 
-section.content-shop > div > div > div > div.edit-delete-butons {
+section.content-shop>div>div>div>div.edit-delete-butons {
 	text-align: center;
 }
-section.content-shop > div > div > div > p.price {
+
+section.content-shop>div>div>div>p.price {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;

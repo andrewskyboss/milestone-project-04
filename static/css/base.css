@@ -101,6 +101,12 @@ img {
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
 }
+.text-edit {
+	color: var(--color-brand-2) !important;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
 
 .btn.btn-primary {
 	padding: 20px 40px;
@@ -588,6 +594,18 @@ section.container-fluid.bg-images>div>div>div .btn {
 .table thead th {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
+}
+
+section.content-shop > div > div > div > div.edit-delete-butons {
+	text-align: center;
+}
+section.content-shop > div > div > div > p.price {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: var(--size-subtitle);
+	color: var(--color-brand-3);
+	text-align: center;
 }
 
 .row {

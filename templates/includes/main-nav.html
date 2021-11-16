@@ -10,7 +10,7 @@
                 <!--  -->{% if request.user.is_authenticated %}
                     <!--  -->{% if request.user.is_superuser %}
                         <li class="menu-item">
-                            <a class="menu-link" href="#" title="Product Management">
+                            <a class="menu-link" href="{% url 'add_product' %}" title="Product Management">
                                 <span class="menu-item-title">Product Management</span>
                             </a>
                         </li>

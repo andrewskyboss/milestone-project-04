@@ -4,18 +4,23 @@
 }
 
 #profile-update-form .form-control {
-    color: #000;
+    color: var(--color-brand-5);
+    border: 1px solid var(--color-brand-4);
 }
 
 #profile-update-form input::placeholder {
-    color: #aab7c4;
+    color: var(--color-brand-4);
+}
+#profile-update-form input:focus,
+#profile-update-form input:active {
+    box-shadow: 0 1px 3px 0 var(--color-brand-2);
 }
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color: #000;
+    color: var(--color-brand-4);
 }
 
 #id_default_country option:first-child {
-    color: #aab7c4;
+    color: var(--color-brand-4);
 }

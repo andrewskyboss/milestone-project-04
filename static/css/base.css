@@ -170,9 +170,16 @@ img {
 
 .btt-button {
 	position: fixed;
-	bottom: 40px;
+	bottom: -100px;
 	right: 40px;
 	z-index: 1000;
+	visibility: hidden;
+}
+
+body.scrolled>.btt-button {
+	visibility: visible;
+	bottom: 40px;
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
 }
 
 .btt-link {
@@ -346,6 +353,11 @@ section.section-last {
 			rgba(0, 0, 0, 0.7124935535902388) 65%, rgba(0, 0, 0, 0.9) 100%);
 }
 
+.section-form-container {
+	position: relative;
+	padding: 50px;
+}
+
 .section-form-background {
 	position: relative;
 	width: 100%;
@@ -359,7 +371,7 @@ section.section-last {
 section.section-four div>div>div.section-form-group {
 	background-color: var(--color-brand-3);
 	top: 5%;
-	position: absolute;
+	position: relative;
 	height: auto;
 	min-height: 70%;
 	display: flex;
@@ -446,6 +458,11 @@ section.section-four>div>div>div>form>p>input {
 	outline: none;
 }
 
+input:-internal-autofill-selected {
+	background-color: transparent !important;
+	color: var(--color-white);
+}
+
 section.section-four>div>div>div>form>p>input::placeholder {
 	color: var(--color-brand-2);
 }
@@ -467,9 +484,11 @@ section.section-two.content-shop {
 section.section-two>.for-coaches {
 	height: auto;
 	position: relative;
-	/* min-height: 80vh; */
+	min-height: 80vh;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
 }
 
 section.coaches-content>div>div.single-card-color {
@@ -655,9 +674,24 @@ section.container-fluid.bg-images>div>div>div .btn {
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.0s;
 }
 
+section.section-four>div>div>div>form>div>button {
+	margin-left: 20px;
+}
+
+section.section-four>div>div>div>form>.password-link {
+	margin-top: 20px;
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 2.0s;
+}
+
+#id_remember {
+	width: auto;
+}
+
 .table thead th {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
+	color: var(--color-brand-3);
+	font-weight: 300;
 }
 
 section.content-shop>div>div>div>div.edit-delete-butons {

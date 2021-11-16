@@ -1,11 +1,26 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
 {% load i18n %}
 
 {% block head_title %}{% trans "Account Inactive" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Account Inactive" %}</h1>
+<section class="container-fluid bg-images section-one section-login">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">{% trans "Account Inactive" %}</h2>
+                <h3 class="section-subtitle">The CUBE | GYM & Fitness Club</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-two coaches-content">
+    <div class="row justify-content-center bg-images-overlay align-items-center content-first for-coaches">
+        <h2>{% trans "This account is inactive." %}</h2>
+        <a class="btn btn-outline-primary btn-lg" href="{% url 'home' %}">Home</a>
+    </div>
+</section>
 
-<p>{% trans "This account is inactive." %}</p>
 {% endblock %}
+{% include 'includes/section-three-shop.html' %}

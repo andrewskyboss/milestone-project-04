@@ -32,6 +32,34 @@
                 <hr>
             </div>
         </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-10 text-center">
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="{% url 'add_product' %}" class="btn btn-primary btn-lg my-2">
+                    <span class="icon mr-2">
+                        <i class="far fa-address-card"></i>
+                    </span>
+                    <span class="text-uppercase">Add Product</span>
+                </a>
+                {% endif %}
+                <a href="{% url 'account_logout' %}" class="btn btn-primary btn-lg my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="text-uppercase">Log Out</span>
+                </a>
+                {% endif %}
+                <a href="{% url 'home' %}" class="btn btn-primary btn-lg my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="text-uppercase">Go to Homepage</span>
+                </a>
+
+            </div>
+        </div>
+        <hr>
         <div class="row">
             <div class="col-12 col-lg-4">
                 <h4 class="text-muted">Default Delivery Information</h4>

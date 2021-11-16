@@ -13,7 +13,6 @@
       <div class="section-title-group">
         <h2 class="section-title">{% trans "Sign Out" %}</h2>
         <h3 class="section-subtitle">The CUBE | GYM & Fitness Club</h3>
-        <!-- <a class="btn btn-outline-primary btn-lg" href="#">Buy a Membership</a> -->
       </div>
     </div>
   </div>
@@ -26,14 +25,11 @@
         <p class="description">{% trans 'Are you sure you want to sign out?' %}</p>
 
         <h2 class="section-title">{% trans "Sign Out" %}</h2>
-        <!-- <h3 class="section-subtitle">36 types of activities are available</h3>
-        <p class="section-description"> plus a large body-building and cardio fitness room</p>
-        <a class="btn btn-outline-primary btn-lg" href="#">View Now</a> -->
 
         <form method="post" action="{% url 'account_logout' %}">
           {% csrf_token %}
           {% if redirect_field_value %}
-          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
           <button class="btn btn-outline-primary btn-lg" type="submit">{% trans 'Sign Out' %}</button>
           <a class="btn btn-outline-primary btn-lg" href="{% url 'home' %}">Home</a>

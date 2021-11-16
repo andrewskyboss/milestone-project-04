@@ -1,13 +1,11 @@
 """thecube_gym_fitness_club products views Configuration
 """
-
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from .models import Product, Category
 from django.contrib.auth.decorators import login_required
-
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+from .models import Product, Category
 from .forms import ProductForm
 
 # Create your views here.
@@ -77,6 +75,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def add_product(request):
     """ Add a product to the store """
     # if not request.user.is_superuser:
@@ -140,5 +139,5 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted!')
+    messages.success(request, 'Product is deleted!')
     return redirect(reverse('products'))

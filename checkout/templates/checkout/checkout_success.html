@@ -6,11 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
-<!-- <div class="container header-container">
-<div class="row">
-<div class="col"></div>
-</div>
-</div> -->
+
 {% endblock %}
 
 {% block content %}
@@ -18,9 +14,8 @@
     <div class="row bg-images-overlay">
         <div class="col section-col">
             <div class="section-title-group">
-                <h2 class="section-title">Thank You</h2>
-                <h3 class="section-subtitle">Your order information is below. A confirmation email will be sent to
-                    <strong>{{ order.email }}</strong>.</h3>
+                <h2 class="section-title">Thank You for Shopping</h2>
+                <h3 class="section-subtitle">The CUBE | GYM & Fitness Club</h3>
             </div>
         </div>
     </div>
@@ -28,15 +23,17 @@
 <section class="container-fluid bg-images section-two content-shop">
     <div class="overlay"></div>
     <div class="container content-shop-inner">
-        <div class="row">
-            <div class="col-12 col-lg-7">
+        <div class="row justify-content-center align-items-center">
+            <h2 class="content-title">Your order information is below.</h2>
+            <h3 class="content-subtitle"> A confirmation email will be sent to <strong>{{ order.email }}</strong>.</h3>
+            <div class="col-12 col-lg-8 confirmation-table">
                 <div class="order-confirmation-wrapper p-2 border">
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Order Info:</small>
+                            <h4 class="text-muted">Order Info:</h4>
                         </div>
                     </div>
-
+                    <hr>
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Number</p>
@@ -45,7 +42,6 @@
                             <p class="mb-0">{{ order.order_number }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Date</p>
@@ -54,33 +50,32 @@
                             <p class="mb-0">{{ order.date }}</p>
                         </div>
                     </div>
-
+                    <hr>
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Order Details:</small>
+                            <h4 class="text-muted">Order Details:</h4>
                         </div>
                     </div>
-
+                    <hr>
                     {% for item in order.lineitems.all %}
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="small mb-0 text-black font-weight-bold">
-                                {{ item.product.name }}{% if item.product_size %} - Size
-                                {{ item.product.size|upper }}{% endif %}
+                                {{ item.product.name }}
                             </p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
+                            <p class="small mb-0">{{ item.quantity }} @ &#x20AC; {{ item.product.price }} each</p>
                         </div>
                     </div>
                     {% endfor %}
-
+                    <hr>
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Delivering To:</small>
+                            <h4 class="text-muted">Delivering To:</h4>
                         </div>
                     </div>
-
+                    <hr>
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Full Name</p>
@@ -89,7 +84,6 @@
                             <p class="mb-0">{{ order.full_name }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Address 1</p>
@@ -98,7 +92,6 @@
                             <p class="mb-0">{{ order.street_address1 }}</p>
                         </div>
                     </div>
-
                     {% if order.street_address2 %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -109,6 +102,14 @@
                         </div>
                     </div>
                     {% endif %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 text-black font-weight-bold">Town or City</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">{{ order.town_or_city }}</p>
+                        </div>
+                    </div>
 
                     {% if order.county %}
                     <div class="row">
@@ -120,15 +121,6 @@
                         </div>
                     </div>
                     {% endif %}
-
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <p class="mb-0 text-black font-weight-bold">Town or City</p>
-                        </div>
-                        <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.town_or_city }}</p>
-                        </div>
-                    </div>
 
                     {% if order.postcode %}
                     <div class="row">
@@ -149,7 +141,6 @@
                             <p class="mb-0">{{ order.country }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Phone Number</p>
@@ -158,13 +149,13 @@
                             <p class="mb-0">{{ order.phone_number }}</p>
                         </div>
                     </div>
-
+                    <hr>
                     <div class="row">
                         <div class="col">
-                            <small class="text-muted">Billing Info:</small>
+                            <h4 class="text-muted">Billing Info:</h4>
                         </div>
                     </div>
-
+                    <hr>
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Total</p>
@@ -173,7 +164,6 @@
                             <p class="mb-0">{{ order.order_total }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Delivery</p>
@@ -182,7 +172,6 @@
                             <p class="mb-0">{{ order.delivery_cost }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Grand Total</p>
@@ -194,8 +183,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-7 text-right">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-7 text-center">
                 {% if from_profile %}
                 <a href="{% url 'profile' %}" class="btn btn-primary btn-lg my-2">
                     <span class="icon mr-2">
@@ -217,7 +206,6 @@
     </div>
 </section>
 
+{% include 'includes/section-three.html' %}
 
 {% endblock %}
-
-{% include 'includes/section-three.html' %}

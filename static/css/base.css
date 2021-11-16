@@ -63,6 +63,15 @@ h3 {
 	padding: 10px;
 	text-align: center;
 }
+.content-title {
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
+}
+.content-subtitle {
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 0.5s;
+}
+.confirmation-table {
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.0s;
+}
 
 
 p {

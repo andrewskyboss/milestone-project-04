@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-<section class="container-fluid bg-images section-one section-login section-shop">
+<section class="container-fluid bg-images section-one section-login profile-image">
     <div class="row bg-images-overlay">
         <div class="col section-col">
             <div class="section-title-group">
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-muted">Default Delivery Information</h4>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
@@ -41,7 +41,7 @@
                     <button class="btn btn-primary btn-lg text-uppercase float-right">Update Information</button>
                 </form>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-8">
                 <h4 class="text-muted">Order History</h4>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">

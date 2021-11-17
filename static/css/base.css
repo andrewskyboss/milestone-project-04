@@ -449,10 +449,34 @@ section div>div>div.section-form-group form {
 .form-group label {
 	color: var(--color-brand-2);
 }
+#new-image::-webkit-file-upload-button {
+	visibility: hidden;
+}
+section.section-four > div > div > div > form > span.custom-style {
+	color: var(--color-brand-2);
+	width: 100%;
+	margin-top: 0!important;
+	display: flex;
+	flex-direction: column;
+}
 
-form.edit-product .form-group textarea.form-control,
+#new-image {
+	border-bottom: 2px solid var(--color-brand-2);
+	color: var(--color-brand-2);
+	/* height: 66px; */
+	padding: 15px;
+	transition: 0.5s;
+}
+#new-image:hover {
+	cursor: pointer;
+	/* border: 2px solid var(--color-brand-1); */
+	color: var(--color-white);
+	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
+}
+
+form.edit_product .form-group > div > textarea.form-control,
 form.add_product .form-group textarea.form-control {
-	background-color: var(--color-brand-3-b);
+	background-color: var(--color-brand-3-a);
 }
 
 form.edit_product .form-group .form-control,
@@ -494,6 +518,9 @@ section.section-four>div>div>div>form.login>p:nth-child(3)>label {
 
 section.section-four>div>div>div>form>p {
 	width: 100%;
+}
+section.section-four>div>div>div>form>p.subtitle {
+	color: var(--color-brand-2);
 }
 
 section >div>div>div>form>p>input {

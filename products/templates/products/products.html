@@ -71,7 +71,7 @@
         <div class="card col-lg-3 col-md-6 col-sm-12">
             <!-- <img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap"> -->
             {% if product.image %}
-            <a href="{% url 'product_detail' product.id %}">
+            <a class="card-image-large" href="{% url 'product_detail' product.id %}">
                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
             </a>
             {% else %}

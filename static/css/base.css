@@ -110,6 +110,7 @@ img {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
+	padding: 20px;
 }
 
 .text-edit {
@@ -117,6 +118,7 @@ img {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
+	padding: 20px;
 }
 
 .btn.btn-primary {
@@ -136,6 +138,23 @@ img {
 .btn.btn-primary:focus,
 .btn.btn-primary:hover {
 	/*background-color: var(--color-brand-1);*/
+	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, 
+.btn-outline-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-outline-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+	background-color: var(--color-brand-1);
+	border-color: var(--color-brand-1);
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-outline-primary.dropdown-toggle:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
 }
 
@@ -728,6 +747,16 @@ section.section-four>div>div>div>form>.password-link {
 	width: auto;
 }
 
+section.content-shop > div > div.card {
+	min-height: 92vh;
+}
+section.content-shop > div > div > div > h2.card-title {
+	font-size: var(--size-subtitle);
+}
+section.content-shop > div > div > a.card-image-large {
+	height: 50%;
+}
+
 .table thead th {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
@@ -737,6 +766,18 @@ section.section-four>div>div>div>form>.password-link {
 
 section.content-shop>div>div>div>div.edit-delete-butons {
 	text-align: center;
+}
+section.content-shop > div > div.info-block > div > div > div.btn-links-edit {
+	display: flex;
+	margin-top: 20px;
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.5s;
+}
+section.content-shop > div > div.info-block > div > form > div > div > div > div .product-form-single {
+	background-color: var(--color-brand-3);
+	color: var(--color-brand-2);
+	text-align: center;
+	border: none;
+	border-bottom: 2px solid var(--color-brand-2);
 }
 
 section.content-shop>div>div>div>p.price {

@@ -733,6 +733,18 @@ section.container-fluid.bg-images>div>div>div .btn {
 	margin-top: 20px;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.0s;
 }
+section.content-shop > div > div > div.card-body {
+	position: relative;
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	align-items: center;
+}
+.card-btn-single {
+	position: absolute;
+	bottom: 20px;
+	width: auto;
+}
 
 section.section-four>div>div>div>form>div>button {
 	margin-left: 20px;
@@ -747,14 +759,27 @@ section.section-four>div>div>div>form>.password-link {
 	width: auto;
 }
 
-section.content-shop > div > div.card {
+section.content-shop > div > div.card.product-card-single {
 	min-height: 92vh;
 }
 section.content-shop > div > div > div > h2.card-title {
 	font-size: var(--size-subtitle);
 }
-section.content-shop > div > div > a.card-image-large {
-	height: 50%;
+section.content-shop > div > div > div.card-image-top-full {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+section.content-shop > div > div > div > a.card-image-large {
+	height: 100%;
+	padding-top: 20px;
+	overflow: hidden;
+	position: absolute;
+}
+section.content-shop > div > div > div > a.card-image-large .card-img-top-updated {
+	height: 100%;
+	width: auto;
 }
 
 .table thead th {

@@ -68,17 +68,19 @@
     <!-- part one -->
     <div class="row justify-content-center align-items-center">
         {% for product in products %}
-        <div class="card col-lg-3 col-md-6 col-sm-12">
+        <div class="card col-lg-3 col-md-6 col-sm-12 product-card-single">
             <!-- <img class="card-img-top" src="/media/clothes-001.jpg" alt="Card image cap"> -->
-            {% if product.image %}
-            <a class="card-image-large" href="{% url 'product_detail' product.id %}">
-                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-            </a>
-            {% else %}
-            <a href="{% url 'product_detail' product.id %}">
-                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-            </a>
-            {% endif %}
+            <div class="card-image-top-full">
+                {% if product.image %}
+                <a class="card-image-large" href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top-updated img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+            </div>
             <div class="card-body">
                 <h2 class="card-title title">{{ product.name }}</h2>
                 {% if product.category %}
@@ -97,7 +99,8 @@
                     </div>
                 </div>
                 {% endif %}
-                <a href="{% url 'product_detail' product.id %}" class="btn btn-primary btn-block">More Details</a>
+                <a href="{% url 'product_detail' product.id %}" class="btn btn-primary btn-block card-btn-single">More
+                    Details</a>
             </div>
         </div>
         {% endfor %}

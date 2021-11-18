@@ -1,0 +1,29 @@
+[{
+    "pk": 1,
+    "model": "employees.role",
+    "fields": {
+        "name": "fitness_instructor",
+        "friendly_name": "Fitness Instructor"
+    }
+}, {
+    "pk": 2,
+    "model": "employees.role",
+    "fields": {
+        "name": "receptionist",
+        "friendly_name": "receptionist"
+    }
+}, {
+    "pk": 3,
+    "model": "employees.role",
+    "fields": {
+        "name": "sales_manager",
+        "friendly_name": "Sales Manager/ Front Of House"
+    }
+}, {
+    "pk": 4,
+    "model": "employees.role",
+    "fields": {
+        "name": "manager_owner",
+        "friendly_name": "Manager / Owner"
+    }
+}]

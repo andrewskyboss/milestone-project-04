@@ -576,7 +576,7 @@ section.section-two>.for-coaches {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 }
 
 section.coaches-content>div>div.single-card-color {
@@ -629,7 +629,7 @@ section.section-two .content-third .visual-block {
 }
 
 section.section-two .content-first .visual-block {
-	background-image: url("/media/sport-food-007.jpg");
+	background-image: url("/media/nutrition-01.jpg");
 }
 
 section.section-two .content-second .visual-block {
@@ -637,7 +637,7 @@ section.section-two .content-second .visual-block {
 }
 
 section.section-two .content-third .visual-block {
-	background-image: url("/media/clothes-002.jpg");
+	background-image: url("/media/shopping-002.jpg");
 }
 
 section.section-two .visual-block.boot-camp {
@@ -1196,7 +1196,19 @@ footer .newsletter-container .newsletter-form button {
 	}
 
 	.mobile-menu {
-		height: 555px;
+		height: 40vh;
+	}
+	.menu-header-container.level-one {
+		height: 120px;
+	}
+	/* ul.menu-header {
+		height: unset;
+	} */
+	.mobile-menu .navbar .menu-header-container ul li {
+		height: 60px;
+	}
+	.menu-header-container.level-two {
+		height: calc(100% - 120px);
 	}
 
 	.mobile-menu .navbar .menu-header-container.level-two ul li {

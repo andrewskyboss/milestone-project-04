@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid bg-images section-one coaches">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">The Cube's Stuff</h2>
+                <h3 class="section-subtitle">GYM & Fitness Club</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-two coaches-content">
+
+    <!-- part one -->
+
+    <!-- coaches new -->
+    <div class="row justify-content-center bg-images-overlay align-items-center content-first for-coaches">
+
+        {% for employee in employees %}
+        <div class="card col-lg-3 col-md-6 col-sm-12 single-card-color">
+            <div class="card-img-top">
+                <img class="card-imgage" src="/media/coach-01.jpg" alt="Card image cap">
+
+                {% if employee.image %}
+                <a class="card-image" href="#">
+                    <img class="card-img-top-updated img-fluid" src="{{ employee.image.url }}"
+                        alt="{{ employee.name }}">
+                </a>
+                {% else %}
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ employee.name }}">
+                </a>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <h2 class="card-title title">{{ employee.name }}</h2>
+                {% if employee.role %}
+                <h3 class="subtitle">
+                    <a class="text-muted" href="{% url 'employees' %}?role={{ employee.role.name }}">
+                        <i class="fas fa-barcode"></i> {{ employee.role.friendly_name }}
+                    </a>
+                </h3>
+                {% endif %}
+                <h3 class="subtitle">from: {{ employee.start_date }}</h3>
+                <!-- <p class="card-text description"></p> -->
+                <p class="card-text contact">Qualifications: {{ employee.qualifications }}</p>
+                <a href="#" class="btn btn-outline-primary btn-block">More Details</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- part two -->
+
+</section>
+
+{% include 'includes/section-three.html' %}
+
+
+{% endblock %}

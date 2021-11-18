@@ -1,0 +1,76 @@
+[{
+    "pk": 1,
+    "model": "employees.employee",
+    "fields": {
+        "sku": "ee00000101",
+        "name": "Jason Travers",
+        "role": 1,
+        "description": "Get a better basic tee in a size that truly fits with this pocket t-shirt from The Foundry Supply Co.  short-sleeve, crew-neck tee left chest pocket 100% cotton washable imported",
+        "start_date": "April 2019",
+        "qualifications": "NCEF certified fitness instructor and personal trainer",
+        "interests": "Jason loves all types of training, but especially especially weight lifting and boxing. Any and all fighting/impact sports are guaranteed to peak his interest!",
+        "more": "",
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0624201520422666C.jpg"
+    }
+}, {
+    "pk": 2,
+    "model": "employees.employee",
+    "fields": {
+        "sku": "ee00000102",
+        "name": "Dale Nolan",
+        "role": 1,
+        "description": "Get a better basic tee in a size that truly fits with this pocket t-shirt from The Foundry Supply Co.  short-sleeve, crew-neck tee left chest pocket 100% cotton washable imported",
+        "start_date": "September 2019",
+        "qualifications": "NCEF certified fitness instructor and personal trainer",
+        "interests": "Dale enjoys watching all kinds of sports, especially football. Dale also enjoys training in the gym and long romantic walks on the beach.",
+        "more": "Dale is an international DJ and Producer.",
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0624201520422666C.jpg"
+    }
+}, {
+    "pk": 3,
+    "model": "employees.employee",
+    "fields": {
+        "sku": "ee00000103",
+        "name": "Sean Hynan",
+        "role": 1,
+        "description": "",
+        "start_date": " August 2017",
+        "qualifications": "Fitness Instruction EQF3, Group Instruction EQF3, Personal Training EQF4",
+        "interests": "Certified in Strongman Training, Group Box Training, TRX Training, Kettlebell Training, Group and Team Strength and Conditioning, Spin.",
+        "more": "Sean is GAA mad and plays football for his club Cratloe in Co.Clare.",
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0624201520422666C.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "employees.employee",
+    "fields": {
+        "sku": "ee00000104",
+        "name": "Zoe Conway",
+        "role": 2,
+        "description": "",
+        "start_date": "June 2019",
+        "qualifications": "",
+        "interests": "",
+        "more": "Zoe has one hell of an ability to alphabetise and is currently in UL studying New Media and English. When spotted outside of Go Gym or UL, you will most likely find her with a camera in her hand!",
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0624201520422666C.jpg"
+    }
+}, {
+    "pk": 5,
+    "model": "employees.employee",
+    "fields": {
+        "sku": "ee00000105",
+        "name": "Maria McCarthy",
+        "role": 3,
+        "description": "",
+        "start_date": "December 2017",
+        "qualifications": "Fitness Business Management (Australia) Currently studying both Naturopathic Nutrition and Personal Training.",
+        "interests": "",
+        "more": "Marie is a dab hand at basketball and believes that “if you have a healthy body, you have a healthy mind!”",
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0624201520422666C.jpg"
+    }
+}]

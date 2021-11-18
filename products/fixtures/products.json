@@ -787,8 +787,8 @@
         "description": "(Billed Monthly €43.96)",
         "price": 10.99,
         "category": 9,
-        "image_url": "#",
-        "image": ""
+        "image_url": "https://ibb.co/DL85LDh",
+        "image": "membership-002.jpg"
     }
 }, {
     "pk": 67,
@@ -799,8 +799,8 @@
         "description": "Full use of all our facilities, One Free Personal Training Session, One Free InBody Scan, Over 30 Pieces of Cardio Equipment, Over 65 FREE classes per week for members.",
         "price": 429,
         "category": 9,
-        "image_url": "#",
-        "image": ""
+        "image_url": "https://ibb.co/PjVf7dW",
+        "image": "membership-001.jpg"
     }
 }, {
     "pk": 68,

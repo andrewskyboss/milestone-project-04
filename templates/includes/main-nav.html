@@ -2,30 +2,18 @@
     <nav class="navbar">
         <div class="menu-header-container level-one" id="main-menu-level-one">
             <ul class="menu-header">
+                {% if request.user.is_authenticated %}
                 <li class="menu-item">
-                    <a class="menu-link" href="{% url 'products' %}" title="Shop">
-                        <span class="menu-item-title">Shop</span>
+                    <a class="menu-link" href="{% url 'profile' %}" title="My Profile">
+                        <span class="menu-item-title">My Profile</span>
                     </a>
                 </li>
-                <!--  -->{% if request.user.is_authenticated %}
-                    <!--  -->{% if request.user.is_superuser %}
-                        <!-- <li class="menu-item">
-                            <a class="menu-link" href="{% url 'add_product' %}" title="Product Management">
-                                <span class="menu-item-title">Product Management</span>
-                            </a>
-                        </li> -->
-                    <!--  -->{% endif %}
-                    <li class="menu-item">
-                        <a class="menu-link" href="{% url 'profile' %}" title="My Profile">
-                            <span class="menu-item-title">My Profile</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="{% url 'account_logout' %}" title="Log Out">
-                            <span class="menu-item-title">Log Out</span>
-                        </a>
-                    </li>
-                <!--  -->{% else %}
+                <li class="menu-item">
+                    <a class="menu-link" href="{% url 'account_logout' %}" title="Log Out">
+                        <span class="menu-item-title">Log Out</span>
+                    </a>
+                </li>
+                {% else %}
                 <li class="menu-item">
                     <a class="menu-link" href="{% url 'account_login' %}" title="Log In">
                         <span class="menu-item-title">Log In</span>
@@ -36,19 +24,20 @@
                         <span class="menu-item-title">Register</span>
                     </a>
                 </li>
-                <!--  -->{% endif %}
+                {% endif %}
                 <li class="menu-item">
-                    <a class="menu-link" href="#" title="Contact Us">
+                    <a class="menu-link" href="{% url 'contact' %}" title="Contact Us">
                         <span class="menu-item-title">Contact Us</span>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} menu-link" href="{% url 'view_bag' %}" title="Shopping Bag">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} menu-link"
+                        href="{% url 'view_bag' %}" title="Shopping Bag">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-cart"></i></div>
                             <p class="my-0">
                                 {% if grand_total %}
-                                    &#x20AC; {{ grand_total|floatformat:2 }}
+                                &#x20AC; {{ grand_total|floatformat:2 }}
                                 {% else %}
                                 &#x20AC; 0.00
                                 {% endif %}
@@ -60,6 +49,19 @@
         </div>
         <div class="menu-header-container level-two" id="main-menu-level-two">
             <ul class="menu-header">
+                <li class="menu-item">
+                    <a class="menu-link" href="{% url 'products' %}" title="Gym">
+                        <svg class="menu-link-icon-svg" viewBox="0 0 281 281" xmlns="http://www.w3.org/2000/svg">
+                            <path class="st1" d="M113.4,41.1c-5,0-9-4-9-9V9.5c0-5,4-9,9-9h131c5,0,9,4,9,9v22.6c0,5-4,9-9,9 M72.8,77.3
+                            v-4.5c0-17.5,14.2-31.6,31.6-31.6H127 M163.1,41.1h85.8c17.5,0,31.6,14.2,31.6,31.6v176.1c0,17.5-14.2,31.6-31.6,31.6H136
+                             M253.4,235.3h-63.2c-7.5,0-13.5-6.1-13.5-13.5V104.4c0-7.5,6.1-13.5,13.5-13.5h63.2 M113.4,136H0.5v-23.6c0-4.4,3.6-8,8-8h96.9
+                            c4.4,0,8,3.6,8,8V136z M108.9,136v131c0,7.5-6.1,13.5-13.5,13.5H18.6c-7.5,0-13.5-6.1-13.5-13.5v-99.4 M68.2,172.1l-27.1,36.1h31.7
+                            l-22.6,36.2">
+                            </path>
+                        </svg>
+                        <span class="menu-item-title">Shop</span>
+                    </a>
+                </li>
                 <li class="menu-item active">
                     <a class="menu-link" href="{% url 'activities' %}" title="Activities">
                         <svg class="menu-link-icon-svg" viewBox="0 0 282 283.4" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +78,8 @@
                 <li class="menu-item">
                     <a class="menu-link" href="{% url 'employees' %}" title="Coaches">
                         <svg class="menu-link-icon-svg" viewBox="0 0 281.1 281.3" xmlns="http://www.w3.org/2000/svg">
-                            <path class="st1" d="M235.4,181.4l37.3,35.9c10.5,10.5,10.5,27.8,0,38.3l0,0
+                            <path class="st1"
+                                d="M235.4,181.4l37.3,35.9c10.5,10.5,10.5,27.8,0,38.3l0,0
                                 c-10.5,10.5-27.8,10.5-38.3,0l-20.9-20.8 M253.5,231.1c2.5,0,4.5,2,4.5,4.5s-2,4.5-4.5,4.5s-4.5-2-4.5-4.5S251,231.1,253.5,231.1z
                                  M77.4,129.1c-24.3,14.1-40.6,40.3-40.6,70.4c0,44.9,36.4,81.3,81.3,81.3s81.3-36.4,81.3-81.3c0-35.6-22.9-65.8-54.8-76.8
                                  M248.6,194.2c0.2-2.7,0.4-5.5,0.4-8.2c0-25.6-8.6-48.3-27.1-63.2h-76.8l-5.4,3.4c-7.2,5.8-17.5,5.2-24.1-1.3l-7.4-9.3l18.1-13.5
@@ -87,21 +90,10 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="{% url 'gym' %}" title="Gym">
-                        <svg class="menu-link-icon-svg" viewBox="0 0 283.7 284.1" xmlns="http://www.w3.org/2000/svg">
-                            <path class="st1" d="M78.8,2c42.4,0,76.8,34.4,76.8,76.8s-34.4,76.8-76.8,76.8S2,121.2,2,78.8S36.4,2,78.8,2z
-                                 M78.8,56.2c12.5,0,22.6,10.1,22.6,22.6s-10.1,22.6-22.6,22.6S56.2,91.3,56.2,78.8S66.3,56.2,78.8,56.2z M221.4,146.5
-                                c-3.1-7.7-4.9-16.1-4.9-24.8c0-36.2,29.3-65.5,65.5-65.5 M282,209c-58.7,85.8-144.5,72.3-144.5,72.3c-34.4-5.7-61.6-62.5-76.8-103.1
-                                 M114.9,146.5c17.3,9,36.1,27.1,40.6,49.7c0-34.8,27.1-65.4,61.4-67.5 M241.4,196.2c0,0-13.5,31.6-54.2,36.1">
-                            </path>
-                        </svg>
-                        <span class="menu-item-title">Gym</span>
-                    </a>
-                </li>
-                <li class="menu-item">
                     <a class="menu-link" href="{% url 'timetable' %}" title="Timetable">
                         <svg class="menu-link-icon-svg" viewBox="0 0 288.1 261" xmlns="http://www.w3.org/2000/svg">
-                            <path class="st1" d="M35.6,26.6C35.6,14.1,43.7,4,53.7,4s18.1,10.1,18.1,22.6s-8.1,22.6-18.1,22.6 M125.9,26.6
+                            <path class="st1"
+                                d="M35.6,26.6C35.6,14.1,43.7,4,53.7,4s18.1,10.1,18.1,22.6s-8.1,22.6-18.1,22.6 M125.9,26.6
                             C125.9,14.1,134,4,144,4s18.1,10.1,18.1,22.6S154,49.2,144,49.2 M216.3,26.6c0-12.5,8.1-22.6,18.1-22.6s18.1,10.1,18.1,22.6
                             s-8.1,22.6-18.1,22.6 M135,26.6H71.7 M44.6,26.6H22.1C12.1,26.6,4,34.7,4,44.7v194.2c0,10,8.1,18.1,18.1,18.1H266
                             c10,0,18.1-8.1,18.1-18.1V44.7c0-10-8.1-18.1-18.1-18.1h-13.5 M225.3,26.6h-63.2 M53.7,80.8H284">

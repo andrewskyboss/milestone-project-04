@@ -63,12 +63,15 @@ h3 {
 	padding: 10px;
 	text-align: center;
 }
+
 .content-title {
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
 }
+
 .content-subtitle {
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 0.5s;
 }
+
 .confirmation-table {
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.0s;
 }
@@ -130,30 +133,30 @@ img {
 	border-radius: 0;
 	outline: none;
 	border: none;
-	/*transition: background-color 0.8s ease;*/
 	transition: 0.5s;
 }
 
 .btn.btn-primary:active,
 .btn.btn-primary:focus,
 .btn.btn-primary:hover {
-	/*background-color: var(--color-brand-1);*/
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
 }
-.btn-outline-primary:not(:disabled):not(.disabled).active, 
-.btn-outline-primary:not(:disabled):not(.disabled):active, 
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
 .show>.btn-outline-primary.dropdown-toggle,
-.btn-primary:not(:disabled):not(.disabled).active, 
-.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
 	background-color: var(--color-brand-1);
 	border-color: var(--color-brand-1);
 }
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus, 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, 
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-outline-primary.dropdown-toggle:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus, 
-.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
 }
@@ -169,17 +172,18 @@ img {
 	transition: 0.5s;
 }
 
-section.content-shop > div > div > form.search-form > div > div > button {
+section.content-shop>div>div>form.search-form>div>div>button {
 	height: 66px;
 }
-section.content-shop > div > div > form.search-form > div > .form-control {
+
+section.content-shop>div>div>form.search-form>div>.form-control {
 	height: 66px;
 	text-align: center;
-	border: 1px solid var(--color-brand-2)!important;
+	border: 1px solid var(--color-brand-2) !important;
 	outline: none;
 }
-section.content-shop > div > div > form.search-form > div > .form-control:focus {
-	/* box-shadow: none; */
+
+section.content-shop>div>div>form.search-form>div>.form-control:focus {
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
 	color: var(--color-white);
 }
@@ -194,7 +198,6 @@ section.content-shop > div > div > form.search-form > div > .form-control:focus 
 .btn.btn-outline-primary:hover,
 .btn.btn-outline-primary:active,
 .btn.btn-outline-primary:focus {
-	/*background-color: var(--color-brand-1);*/
 	border: 2px solid var(--color-brand-1);
 	color: var(--color-white);
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
@@ -204,7 +207,6 @@ section.content-shop > div > div > form.search-form > div > .form-control:focus 
 .btn.btn-outline-primary.orange:hover,
 .btn.btn-outline-primary.orange:active,
 .btn.btn-outline-primary.orange:focus {
-	/*background-color: var(--color-brand-1);*/
 	border: 2px solid var(--color-brand-2);
 	color: var(--color-white);
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-2);
@@ -314,8 +316,18 @@ section {
 	height: 100vh;
 }
 
+.section-one.activities-header-image {
+	background-image: url("/media/gym-training-001.jpg");
+	height: 100vh;
+}
+
 .coaches {
 	background-image: url("/media/personal-trainer-001.jpg");
+}
+
+.section-one.contact {
+	background-image: url("/media/contact-03.jpg");
+	height: 100vh;
 }
 
 .gym-background {
@@ -333,11 +345,17 @@ section {
 
 .section-one.section-shop {
 	background-image: url("/media/clothes-002.jpg");
-	height: 40vh;
+	height: 50vh;
 }
+
+.section-one.section-single-employee {
+	background-image: url("/media/sunshine-001.jpg");
+	height: 50vh;
+}
+
 .section-one.profile-image {
 	background-image: url("/media/coach-04.jpg");
-	height: 40vh;
+	height: 50vh;
 }
 
 .section-one.activities {
@@ -346,7 +364,6 @@ section {
 }
 
 .section-two {
-	/*background-color: var(--color-brand-4);*/
 	min-height: 80vh;
 	height: auto;
 }
@@ -358,6 +375,12 @@ section {
 
 .section-four {
 	background-image: url("/media/yoga-003.jpg");
+	height: auto;
+	min-height: 100vh;
+}
+
+.section-four.contact-content {
+	background-image: url("/media/contact-02.jpg");
 	height: auto;
 	min-height: 100vh;
 }
@@ -382,7 +405,6 @@ section.section-last {
 
 .bg-images {
 	position: relative;
-	/*opacity: 0.65;*/
 	padding: 0;
 	background-attachment: fixed;
 	background-position: center;
@@ -401,7 +423,7 @@ section.section-last {
 }
 
 .section-form-container {
-	position: relative;
+	position: absolute;
 	padding: 50px;
 }
 
@@ -449,13 +471,15 @@ section div>div>div.section-form-group form {
 .form-group label {
 	color: var(--color-brand-2);
 }
+
 #new-image::-webkit-file-upload-button {
 	visibility: hidden;
 }
-section.section-four > div > div > div > form > span.custom-style {
+
+section.section-four>div>div>div>form>span.custom-style {
 	color: var(--color-brand-2);
 	width: 100%;
-	margin-top: 0!important;
+	margin-top: 0 !important;
 	display: flex;
 	flex-direction: column;
 }
@@ -463,18 +487,17 @@ section.section-four > div > div > div > form > span.custom-style {
 #new-image {
 	border-bottom: 2px solid var(--color-brand-2);
 	color: var(--color-brand-2);
-	/* height: 66px; */
 	padding: 15px;
 	transition: 0.5s;
 }
+
 #new-image:hover {
 	cursor: pointer;
-	/* border: 2px solid var(--color-brand-1); */
 	color: var(--color-white);
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
 }
 
-form.edit_product .form-group > div > textarea.form-control,
+form.edit_product .form-group>div>textarea.form-control,
 form.add_product .form-group textarea.form-control {
 	background-color: var(--color-brand-3-a);
 }
@@ -519,11 +542,12 @@ section.section-four>div>div>div>form.login>p:nth-child(3)>label {
 section.section-four>div>div>div>form>p {
 	width: 100%;
 }
+
 section.section-four>div>div>div>form>p.subtitle {
 	color: var(--color-brand-2);
 }
 
-section >div>div>div>form>p>input {
+section>div>div>div>form>p>input {
 	width: 100%;
 	padding: 10px 20px;
 	background-color: transparent;
@@ -531,7 +555,8 @@ section >div>div>div>form>p>input {
 	border-bottom: 2px solid var(--color-brand-2);
 	outline: none;
 }
-section.coaches-content > div > div > div > form > input[type=submit] {
+
+section.coaches-content>div>div>div>form>input[type=submit] {
 	padding: 20px 40px;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -541,17 +566,19 @@ section.coaches-content > div > div > div > form > input[type=submit] {
 	background-color: transparent;
 	transition: 0.5s;
 }
-section.coaches-content > div > div > div > form > input[type=submit]:hover {
+
+section.coaches-content>div>div>div>form>input[type=submit]:hover {
 	border: 2px solid var(--color-brand-1);
 	color: var(--color-white);
 	box-shadow: inset 0 -66px 0 0 var(--color-brand-1);
 }
+
 input:-internal-autofill-selected {
 	background-color: transparent !important;
 	color: var(--color-white);
 }
 
-section >div>div>div>form>p>input::placeholder {
+section>div>div>div>form>p>input::placeholder {
 	color: var(--color-brand-2);
 }
 
@@ -576,7 +603,6 @@ section.section-two>.for-coaches {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	display: flex;
-	/* flex-direction: column; */
 }
 
 section.coaches-content>div>div.single-card-color {
@@ -589,24 +615,70 @@ section.coaches-content>div>div.single-card-color {
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
 }
 
-section.coaches-content>div>div.single-card-color:nth-child(2) {
+section.coaches-content>div>div.single-card-color-coaches {
+	height: inherit;
+	background-color: var(--color-brand-3);
+	margin: 10px;
+	padding: 0;
+	border-radius: 0;
+	border: none;
+	overflow: hidden;
+	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
+}
+
+section.coaches-content>div>div>div.card-image-top-full {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+
+section.coaches-content>div>div>div>a.card-image-large {
+	height: 100%;
+	padding-top: 20px;
+	overflow: hidden;
+	position: absolute;
+}
+
+section.coaches-content>div>div>div>a.card-image-large .card-img-top-updated {
+	height: 100%;
+	width: auto;
+}
+
+section.coaches-content>div>div.single-card-color-coaches:nth-child(2) {
 	animation-delay: 0.5s;
+}
+
+section.coaches-content>div>div.single-card-color-coaches:nth-child(3) {
+	animation-delay: 0.75s;
+}
+
+section.coaches-content>div>div.single-card-color-coaches:nth-child(4) {
+	animation-delay: 1.00s;
+}
+
+section.coaches-content>div>div.single-card-color-coaches:nth-child(5) {
+	animation-delay: 1.25s;
 }
 
 section.coaches-content>div>div>div.card-img-top {
 	height: 40vh;
 	overflow: hidden;
 	position: relative;
-}
-section.coaches-content>div>div>div.card-img-top.employee {
-	height: unset;
+	border-radius: 0;
 }
 
-section.coaches-content>div>div>div.card-img-top .card-imgage {
+section.coaches-content>div>div>div.card-img-top .card-image {
 	height: auto;
 	width: 100%;
-	position: absolute;
+}
 
+section.coaches-content>div>div>div.card-img-top .card-image .card-img-top-updated {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
 }
 
 section.coaches-content>div>div>div.card-body>.subtitle,
@@ -616,10 +688,6 @@ section.coaches-content>div>div>div.card-body>.contact {
 	color: var(--color-white);
 }
 
-/*section.section-two > .content-second {
-	width: 100%;
-	height: 80vh;
-}*/
 section.section-two .content-first .visual-block,
 section.section-two .content-second .visual-block,
 section.section-two .content-third .visual-block {
@@ -636,12 +704,28 @@ section.section-two .content-first .visual-block {
 	background-image: url("/media/nutrition-01.jpg");
 }
 
+section.section-two .content-first .visual-block.activity-spin {
+	background-image: url("/media/gym-training-004.jpg");
+}
+
 section.section-two .content-second .visual-block {
 	background-image: url("/media/gym-equipment-006.jpg");
 }
 
+section.section-two .content-second .visual-block.activity-move {
+	background-image: url("/media/yoga-004.jpg");
+}
+
 section.section-two .content-third .visual-block {
 	background-image: url("/media/shopping-002.jpg");
+}
+
+section.section-two .content-third .visual-block.timetable {
+	background-image: url("/media/training-plan-002.jpg");
+}
+
+section.section-two .content-third .visual-block.activity-sweat {
+	background-image: url("/media/running-002.jpg");
 }
 
 section.section-two .visual-block.boot-camp {
@@ -656,15 +740,18 @@ section.section-two .visual-block.body-pump {
 	background-image: url("/media/gym-training-003.jpg");
 }
 
-
-/*section.section-two > div > div > div > img.section-single-image {
+section.content-shop>div>div.visual-block>a.single-employee-image {
 	height: 100%;
-	padding: 0;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
+}
+
+section.content-shop>div>div.visual-block>a>.employee {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
 section.section-two .content-first .info-block {
 	height: 100%;
 	background-color: var(--color-brand-3);
@@ -744,6 +831,10 @@ section.section-two>div>div.info-block .section-content-group .title {
 	font-size: var(--size-title);
 }
 
+section.content-shop>div>div.info-block>div>.subitle {
+	color: var(--color-white);
+}
+
 section.container-fluid.bg-images>div>div>div .section-title {
 	font-weight: 300;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both;
@@ -764,13 +855,14 @@ section.container-fluid.bg-images>div>div>div .btn {
 	margin-top: 20px;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.0s;
 }
-section.content-shop > div > div > div.card-body {
+
+section.content-shop>div>div>div.card-body {
 	position: relative;
 	display: flex;
-	/* justify-content: center; */
 	flex-direction: column;
 	align-items: center;
 }
+
 .card-btn-single {
 	position: absolute;
 	bottom: 20px;
@@ -790,27 +882,32 @@ section.section-four>div>div>div>form>.password-link {
 	width: auto;
 }
 
-section.content-shop > div > div.card.product-card-single {
+section.content-shop>div>div.card.product-card-single {
 	min-height: 92vh;
 }
-section.content-shop > div > div > div > h2.card-title {
+
+section.content-shop>div>div>div>h2.card-title {
 	font-size: var(--size-subtitle);
 }
-section.content-shop > div > div > div.card-image-top-full {
+
+section.content-shop>div>div>div.card-image-top-full {
 	position: relative;
 	width: 100%;
 	height: 50vh;
 	overflow: hidden;
 }
-section.content-shop > div > div > div > a.card-image-large {
+
+section.content-shop>div>div>div>a.card-image-large {
 	height: 100%;
 	padding-top: 20px;
 	overflow: hidden;
-	position: absolute;
 }
-section.content-shop > div > div > div > a.card-image-large .card-img-top-updated {
+
+section.content-shop>div>div>div>a.card-image-large .card-img-top-updated {
+	position: absolute;
 	height: 100%;
-	width: auto;
+	width: 100%;
+	object-fit: cover;
 }
 
 .table thead th {
@@ -823,12 +920,14 @@ section.content-shop > div > div > div > a.card-image-large .card-img-top-update
 section.content-shop>div>div>div>div.edit-delete-butons {
 	text-align: center;
 }
-section.content-shop > div > div.info-block > div > div > div.btn-links-edit {
+
+section.content-shop>div>div.info-block>div>div>div.btn-links-edit {
 	display: flex;
 	margin-top: 20px;
 	animation: fade-in-from-bottom-animation 0.8s cubic-bezier(0.25, 0.450, 0.6, 0.79) both 1.5s;
 }
-section.content-shop > div > div.info-block > div > form > div > div > div > div .product-form-single {
+
+section.content-shop>div>div.info-block>div>form>div>div>div>div .product-form-single {
 	background-color: var(--color-brand-3);
 	color: var(--color-brand-2);
 	text-align: center;
@@ -846,7 +945,6 @@ section.content-shop>div>div>div>p.price {
 }
 
 .row {
-	/*height: 100%;*/
 	margin-right: 0;
 	margin-left: 0;
 }
@@ -861,7 +959,6 @@ section.content-shop>div>div>div>p.price {
 
 .menu-header-container.level-one {
 	height: 50px;
-	/*margin-bottom: 5px;*/
 	justify-content: flex-end;
 	padding-right: 100px;
 }
@@ -885,19 +982,8 @@ ul.menu-header>li {
 	display: inline-block;
 	position: relative;
 	line-height: initial;
-	/*margin-right: -5px;*/
 }
 
-/*ul.menu-header > li.menu-item.active a {
-	background-color: var(--color-brand-2);
-}*/
-/*#main-menu-level-two > ul > li.menu-item.active > a > svg.menu-link-icon-svg path {
-	stroke: var(--color-white);
-}
-#main-menu-level-two > ul > li.menu-item.active > a > .menu-item-title {
-	font-weight: 400;
-	color: var(--color-white);
-}*/
 ul.menu-header>li a {
 	padding: 15px 15px;
 	font-weight: 600;
@@ -1202,15 +1288,15 @@ footer .newsletter-container .newsletter-form button {
 	.mobile-menu {
 		height: 40vh;
 	}
+
 	.menu-header-container.level-one {
 		height: 120px;
 	}
-	/* ul.menu-header {
-		height: unset;
-	} */
+
 	.mobile-menu .navbar .menu-header-container ul li {
 		height: 60px;
 	}
+
 	.menu-header-container.level-two {
 		height: calc(100% - 120px);
 	}

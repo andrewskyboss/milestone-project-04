@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid bg-images section-one contact">
+	<div class="row bg-images-overlay">
+		<div class="col section-col">
+			<div class="section-title-group">
+				<h2 class="section-title">The Cube's Contact</h2>
+				<h3 class="section-subtitle">GYM & Fitness Club</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="container-fluid bg-images section-four contact-content">
+	<div class="row bg-images-overlay section-form-container">
+		<div class="col section-col section-form">
+			<div class="col-lg-6 col-md-8 col-sm-12 section-form-group">
+				<h2 class="section-title">Sorry, Contact Us is Under Construction</h2>
+				<a href="{% url 'home' %}" class="btn btn-primary btn-lg my-2">
+					<span class="icon mr-2">
+						<i class="fas fa-home"></i>
+					</span>
+					<span class="text-uppercase">Go to Homepage</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+{% include 'includes/section-three-shop.html' %}
+
+
+{% endblock %}

@@ -16,9 +16,9 @@ def activities(request):
     return render(request, 'home/activities.html')
 
 
-def coaches(request):
+def contact(request):
     """ A view for coaches page """
-    return render(request, 'home/coaches.html')
+    return render(request, 'home/contact.html')
 
 
 def gym(request):

@@ -20,34 +20,6 @@
     </div>
 </section>
 <section class="container-fluid bg-images section-two content-shop">
-    <!-- part one -->
-    <!-- <div class="row justify-content-center align-items-center">
-            {% for product in products %}
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                {% if product.image %}
-                <a href="#">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                </a>
-                {% else %}
-                <a href="#">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                </a>
-                {% endif %}
-                <div class="card-body">
-                    <h2 class="card-title title">{{ product.name }}</h2>
-                    {% if product.category %}
-                    <h3 class="subtitle">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            {{ product.category.friendly_name }}
-                        </a>
-                    </h3>
-                    {% endif %}
-                    <p class="card-text price">${{ product.price }}</p>
-                    <a href="#" class="btn btn-primary btn-block">Add to cart</a>
-                </div>
-            </div>
-            {% endfor %}
-        </div> -->
     <div class="row justify-content-center align-items-center content-first">
         <div class="col col-lg-6 align-self-center visual-block">
             {% if product.image %}

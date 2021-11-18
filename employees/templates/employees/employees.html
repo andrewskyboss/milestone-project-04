@@ -31,16 +31,14 @@
         {% for employee in employees %}
         <div class="card col-lg-3 col-md-6 col-sm-12 single-card-color">
             <div class="card-img-top">
-                <img class="card-imgage" src="/media/coach-01.jpg" alt="Card image cap">
-
                 {% if employee.image %}
-                <a class="card-image" href="#">
+                <a class="card-image" href="{% url 'employee_detail' employee.id %}">
                     <img class="card-img-top-updated img-fluid" src="{{ employee.image.url }}"
                         alt="{{ employee.name }}">
                 </a>
                 {% else %}
-                <a href="#">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ employee.name }}">
+                <a href="{% url 'employee_detail' employee.id %}">
+                    <img class="card-img-top employee img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ employee.name }}">
                 </a>
                 {% endif %}
             </div>
@@ -48,15 +46,20 @@
                 <h2 class="card-title title">{{ employee.name }}</h2>
                 {% if employee.role %}
                 <h3 class="subtitle">
-                    <a class="text-muted" href="{% url 'employees' %}?role={{ employee.role.name }}">
+                    <a class="text-info" href="{% url 'employees' %}?role={{ employee.role.name }}">
                         <i class="fas fa-barcode"></i> {{ employee.role.friendly_name }}
                     </a>
                 </h3>
                 {% endif %}
+                {% if employee.start_date %}
                 <h3 class="subtitle">from: {{ employee.start_date }}</h3>
-                <!-- <p class="card-text description"></p> -->
+                {% endif %}
+                {% if employee.qualifications %}
                 <p class="card-text contact">Qualifications: {{ employee.qualifications }}</p>
-                <a href="#" class="btn btn-outline-primary btn-block">More Details</a>
+                {% endif %}
+
+                <a href="{% url 'employee_detail' employee.id %}" class="btn btn-outline-primary btn-block">More
+                    Details</a>
             </div>
         </div>
         {% endfor %}

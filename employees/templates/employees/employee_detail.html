@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid bg-images section-one section-login section-shop">
+    <div class="row bg-images-overlay">
+        <div class="col section-col">
+            <div class="section-title-group">
+                <h2 class="section-title">{{ employee.name }}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid bg-images section-two content-shop">
+    <div class="row justify-content-center align-items-center content-first">
+        <div class="col col-lg-6 align-self-center visual-block">
+            {% if employee.image %}
+            <a href="{{ employee.image.url }}" target="_blank">
+                <img class="card-img-top employee img-fluid" src="{{ employee.image.url }}" alt="{{ employee.name }}">
+            </a>
+            {% else %}
+            <a href="">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ employee.name }}">
+            </a>
+            {% endif %}
+        </div>
+        <div class="col col-lg-6 align-self-center info-block">
+            <div class="section-content-group">
+                <h3 class="subtitle">{{ employee.name }}</h3>
+
+                {% if employee.start_date %}
+                <h2 class="title">With us from {{ employee.start_date }}</h2>
+                {% endif %}
+                {% if employee.role %}
+                <h3 class="subtitle">
+                    <a class="text-info" href="{% url 'employees' %}?role={{ employee.role.name }}">
+                        <i class="fas fa-barcode"></i> {{ employee.role.friendly_name }}
+                    </a>
+                </h3>
+                {% endif %}
+                {% if employee.qualifications %}
+                <p class="description"><strong>Qualifications: </strong> {{ employee.qualifications }}</p>
+                {% endif %}
+                {% if employee.description %}
+                <p class="description">Description: {{ employee.description }}</p>
+                {% endif %}
+                {% if employee.interests %}
+                <p class="description">Interests: {{ employee.interests }}</p>
+                {% endif %}
+                {% if employee.more %}
+                <p class="description">Good to know: {{ employee.more }}</p>
+                {% endif %}
+                <a class="btn btn-outline-primary btn-lg" href="{% url 'employees' %}">All Employees</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'includes/section-three.html' %}
+
+{% endblock %}

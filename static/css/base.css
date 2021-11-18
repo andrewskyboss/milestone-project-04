@@ -598,6 +598,9 @@ section.coaches-content>div>div>div.card-img-top {
 	overflow: hidden;
 	position: relative;
 }
+section.coaches-content>div>div>div.card-img-top.employee {
+	height: unset;
+}
 
 section.coaches-content>div>div>div.card-img-top .card-imgage {
 	height: auto;
@@ -626,6 +629,7 @@ section.section-two .content-third .visual-block {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 }
 
 section.section-two .content-first .visual-block {

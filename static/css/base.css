@@ -751,10 +751,18 @@ section.content-shop>div>div.visual-block>a>.employee {
 	object-fit: cover;
 	object-position: top;
 }
+section.content-shop > div > div.visual-block > a > img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
 
 section.section-two .content-first .info-block {
 	height: 100%;
 	background-color: var(--color-brand-3);
+	overflow: auto;
 }
 
 section.section-two .content-second .info-block {

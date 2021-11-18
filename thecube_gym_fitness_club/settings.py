@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-# import dj_database_url
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -129,7 +129,7 @@ DATABASES = {
 }
 
 # DATABASES = {
-#     'default': {dj_database_url.parse('postgres://iljbjyshfyyzqt:1cfb45ef3a511f851425f3fbea3efc8e692fb1ede17b298614f093c61befa286@ec2-52-31-219-113.eu-west-1.compute.amazonaws.com:5432/d5chg8p01mboa7'), }
+#     'default': {dj_database_url.parse('postgres://iljbjyshfyyzqt:1cfb45ef3a511f851425f3fbea3efc8e692fb1ede17b298614f093c61befa286@ec2-52-31-219-113.eu-west-1.compute.amazonaws.com:5432/d5chg8p01mboa7') }
 # }
 
 

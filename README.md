@@ -5,7 +5,7 @@
 
 ![logo](assets/images/gym-logo.png)
 ![homepage](assets/images/homepage.PNG)
-[Live site on Github Pages](https://andrewskyboss.github.io/milestone-project-04)
+[Live site on Heroku](https://thecube-gym-fitness-club.herokuapp.com)
 
 # Author
 Andrej Cybovskij

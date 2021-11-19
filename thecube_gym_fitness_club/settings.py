@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-d7km9t5jfi8-wighjgdbjj-@*$ztct*gn2)f05_*y+2#rb#2he
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['milestone-project-04-ac.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -121,16 +121,17 @@ WSGI_APPLICATION = 'thecube_gym_fitness_club.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://iljbjyshfyyzqt:1cfb45ef3a511f851425f3fbea3efc8e692fb1ede17b298614f093c61befa286@ec2-52-31-219-113.eu-west-1.compute.amazonaws.com:5432/d5chg8p01mboa7')
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation

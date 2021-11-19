@@ -25,9 +25,6 @@
         <p class="description">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
         <h2 class="section-title">{% trans "Sign Up" %}</h2>
-        <!-- <h3 class="section-subtitle">36 types of activities are available</h3>
-        <p class="section-description"> plus a large body-building and cardio fitness room</p>
-        <a class="btn btn-outline-primary btn-lg" href="#">View Now</a> -->
 
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}

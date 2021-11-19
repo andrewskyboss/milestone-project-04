@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="container-fluid bg-images section-one">
+	<div class="row bg-images-overlay">
+		<div class="col section-col">
+			<div class="section-title-group">
+				<h2 class="section-title">Apologies - Bad request</h2>
+				<h3 class="section-subtitle">Sorry, your request caused in an error.<br> Please follow the link below</h3>
+				<a class="btn btn-outline-primary btn-lg" href="{% url 'home' %}">Go to homepage</a>
+			</div>
+		</div>
+	</div>
+</section>
+{% include 'includes/section-three-shop.html' %}
+{% endblock %}

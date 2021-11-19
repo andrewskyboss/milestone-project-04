@@ -2,7 +2,6 @@
 """
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
-
 from products.models import Product
 
 # Create your views here.
@@ -58,7 +57,6 @@ def remove_from_bag(request, item_id):
 
     try:
         product = get_object_or_404(Product, pk=item_id)
-        size = None
 
         bag = request.session.get('bag', {})
 

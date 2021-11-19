@@ -1,1 +1,1 @@
-web: gunicorn thecube_gym_fitness_club.wsgi:application
+web: gunicorn thecube_gym_fitness_club.wsgi

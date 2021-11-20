@@ -1357,7 +1357,7 @@ footer .newsletter-container .newsletter-form button {
 	section.section-two>.content-first,
 	section.section-two>.content-second,
 	section.section-two>.content-third {
-		/* flex-direction: column; */
+		flex-direction: column;
 		flex-wrap: wrap;
 		height: 90vh;
 	}

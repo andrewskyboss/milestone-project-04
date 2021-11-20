@@ -25,13 +25,13 @@ Andrej Cybovskij
 ### Project Goals
 
 #### The goals of this project are:
-- Design, develop and implement a dynamic front-end web application using HTML, CSS and JavaScript
+- Design, develop and implement a dynamic web application using HTML, CSS, JavaScript Python+Django, relational database (recommending MySQL or Postgres), Stripe payments and additional libraries and APIs
 - Meet the target audience users’ needs using UI/UX design principles
-- Implement front-end interactivity, using core JavaScript, JavaScript libraries and/or Application Programming Interfaces (APIs)
-- Test an interactive front-end web application through the development, implementation and deployment stages
-- Deploy an interactive front-end web application to a Cloud platform
+- Implement a Django project backend by a relational database to create a website that allows users to store and manipulate data records
+- Test a web application through the development, implementation, and deployment stages
+- Deploy the final version of the web application to a Cloud platform Heroku
 - Demonstrate and document the development process through a version control system
-- Learn JavaScript theory and practically implement all gained knowledge
+- Learn Python+Django theory and practically implement all gained knowledge
 
 #### User Goals
 
@@ -44,13 +44,19 @@ Common types of users are:
 - This website does not proposing any login system.
 
 #### Developer Goals
-- Design and implement a front-end web application based on the best principles of user experience design, accessibility and responsivity.
-- Implement a dynamic front-end web application using HTML, CSS and JavaScript technologies.
-- Clearly document process for the future usage and information.
-- Use version control software to maintain and share code with other developers.
-- Test and deploy web application to a Cloud platform.
-- Demonstrate my abilities and knowledge i gained during my course.
-- Get experience in a project development.
+- Build a Django project backend by a relational database to create a website that allows users to store and manipulate data records.
+- Use Multiple Apps structure.
+- Data Modelling trough the relational database schema well-suited for the project.
+- The project should include an authentication mechanism, allowing a user to register and log in.
+- User Interaction to allow user to create and edit models in the backend.
+- Use of Stripe for e-commerce functionality using Stripe.
+- Incorporate a main navigation menu and structured layout.
+- Use of some JavaScript logic you have written to enhance the user experience.
+- Provide off necessary documentation through README.md file to explain what the project does and the value that it provides to its users.
+- Use of Git & GitHub for version control.
+- Made a clear attribution between code written by the author and code from external sources.
+- Deploy the final version of the code to a hosting platform such as Heroku.
+- Do not include any passwords or secret keys in the project repository.
 
 #### Website Owner Goals
 Main goals of website owner are:

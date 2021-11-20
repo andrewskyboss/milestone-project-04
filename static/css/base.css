@@ -751,7 +751,8 @@ section.content-shop>div>div.visual-block>a>.employee {
 	object-fit: cover;
 	object-position: top;
 }
-section.content-shop > div > div.visual-block > a > img {
+
+section.content-shop>div>div.visual-block>a>img {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -1070,8 +1071,8 @@ ul.menu-header>li a {
 	background-color: var(--color-brand-1);
 	transition: background-color 0.8s ease;
 	display: inline-block;
-	height: 100px;
-	width: 100px;
+	height: 100%;
+	width: 100%;
 }
 
 .header-tags .mobile-menu-trigger i {
@@ -1295,6 +1296,7 @@ footer .newsletter-container .newsletter-form button {
 
 	.mobile-menu {
 		height: 40vh;
+		min-height: 550px;
 	}
 
 	.menu-header-container.level-one {
@@ -1314,5 +1316,39 @@ footer .newsletter-container .newsletter-form button {
 		height: calc(50% - 2px);
 		border-bottom: 1px solid var(--color-brand-5);
 	}
+
+}
+
+@media (max-width: 991px) {
+	#main-menu-level-two>ul>li.menu-item>a>svg.menu-link-icon-svg {
+		width: 70px;
+		height: 70px;
+	}
+
+	.header-tags.left {
+		width: 60px;
+		height: 60px;
+	}
+
+	.header-tags .mobile-menu-trigger {
+		font-size: 35px;
+		padding: 2px 14px;
+	}
+
+	.header-tags .mobile-menu-trigger .menu-hamburger {
+		width: 35px;
+		height: 17px;
+	}
+
+	section.section-two>.content-first,
+	section.section-two>.content-second,
+	section.section-two>.content-third {
+		flex-direction: column;
+		height: 90vh;
+	}
+	section.section-two .content-second .info-block {
+		order: 2;
+	}
+
 
 }

@@ -232,8 +232,9 @@ Features to be implemented in the future:
 
 ### Fonts
 - Google Fonts:
-  - [Abril Fatface font can be found here](https://fonts.google.com/specimen/Abril+Fatface)
-  - [Quicksand  font can be found here](https://fonts.google.com/specimen/Quicksand)
+  - [Oswald font can be found here](https://fonts.google.com/specimen/Oswald?query=oswa)
+  - [Roboto Mono font can be found here](https://fonts.google.com/specimen/Roboto+Mono?query=robot)
+  - [Roboto font can be found here](https://fonts.google.com/specimen/Roboto?query=robot)
 
 
 ### Programing Languages

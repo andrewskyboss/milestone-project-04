@@ -1034,6 +1034,13 @@ ul.menu-header>li a {
 	stroke: var(--color-brand-5);
 	stroke-width: 4px;
 	fill: none;
+	transition: stroke 0.8s ease;
+}
+#main-menu-level-two>ul>li.menu-item>a>svg.menu-link-icon-svg.shop path {
+	stroke: var(--color-brand-1);
+	stroke-width: 6px;
+	fill: none;
+	transition: stroke 0.8s ease;
 }
 
 #main-menu-level-two>ul>li.menu-item>a>.menu-item-title {
@@ -1044,12 +1051,19 @@ ul.menu-header>li a {
 	font-weight: 200;
 	padding: 0;
 }
+#main-menu-level-two>ul>li.menu-item>a>.menu-item-title.shop {
+	color: var(--color-brand-1);
+	font-weight: 300;
+}
 
 #main-menu-level-one>ul.menu-header>li:hover a,
 #main-menu-level-two>ul.menu-header>li:hover a {
 	color: var(--color-white) !important;
-	font-weight: 400 !important;
 	box-shadow: inset 0 -200px 0 0 var(--color-brand-1);
+}
+#main-menu-level-two>ul.menu-header>li:hover a>.menu-item-title {
+	color: var(--color-white) !important;
+	font-weight: 300 !important;
 }
 
 #main-menu-level-two>ul.menu-header>li:hover a>svg.menu-link-icon-svg path {
@@ -1212,7 +1226,7 @@ footer .newsletter-container .newsletter-form {
 footer .newsletter-container .newsletter-form .form-input.newsletters {
 	margin-bottom: 0;
 	min-width: 340px;
-	border: 1px solid var(--color-white);
+	border: 0px solid var(--color-white);
 	margin-right: -1px;
 }
 
@@ -1343,12 +1357,34 @@ footer .newsletter-container .newsletter-form button {
 	section.section-two>.content-first,
 	section.section-two>.content-second,
 	section.section-two>.content-third {
-		flex-direction: column;
+		/* flex-direction: column; */
+		flex-wrap: wrap;
 		height: 90vh;
 	}
+
+	section.section-two>.for-coaches {
+		height: auto;
+	}
+
 	section.section-two .content-second .info-block {
 		order: 2;
 	}
 
+	footer .newsletter-container .newsletter-form .form-input.newsletters {
+		min-width: unset;
+		width: 65%;
+	}
+
+	footer .newsletter-container .newsletter-form {
+		width: 90%;
+	}
+
+	footer .newsletter-container .newsletter-form button {
+		width: 35%;
+	}
+
+	.section-form-container {
+		padding: 0;
+	}
 
 }

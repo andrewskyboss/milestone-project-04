@@ -10,17 +10,13 @@
 # Author
 Andrej Cybovskij
 
-
-
-
 ## Project Overview
 
 - Below is a picture of site that shows it in responsive states. 
 [link to check a website to be responsive](http://ami.responsivedesign.is)
 ![picture of site](assets/images/responsive.jpg)
-- Hey Travel is a website, where user can find a holiday destination for their needs. For their convenience, there are Map with proposed destinations markers. As well, user can choose a travel package from this website. To get inspiration about destinations, there are lot of visual materials placed in different manner, such as Hero sliders, Grid images and Gallery. As well, user has form to contact website owner to get all necessary information.
-
-- Despite to the existing travel situation, people still wants to travel. They are looking for new destinations and possibilities to go out from home. That is mean that any Travel and destinations websites, this version as well, has very high commercial feature. It has modern design and lot of visual component. Design was build using last UI/UX technologies.
+- The CUBE | GYM & Fitness Club is a website, where user can get all necessary information about the GYM & Fitness Club. Before or after getting Club membership, user can navigate and research all Club’s proposed services and facilities. There is a short information about Club’s stuff and their experience. Activities section is created to provide information about all Exercise plans and classes they have or will have in the future. Timetable section is created to provide information about all classes times and Fitness Instructors working on them. Shop Section is created to navigate user to fully functional Merchandise online Shop. In that section user can enjoy all ecommerce website possibilities and join a ﬁtness community and purchase Club’s exercise plans and merchandise.
+- This is a version 1 and contents just a minimal options and features. However, this version has very high commercial feature, because during the last year all businesses are moving to online commerce. Ecommerce features allows even for the Gym and Fitness business to survive by selling their merchandise online. As well website has modern design and lot of visual components. Design was build using last UI/UX technologies.
 
 - [Link to a deployed website](https://thecube-gym-fitness-club.herokuapp.com)
 

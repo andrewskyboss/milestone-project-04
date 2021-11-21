@@ -37,11 +37,32 @@ Andrej Cybovskij
 
 - The target audience of this website is quite wide. They are different age, status, families or single people.
 
-Common types of users are:
-- **New customers.** The users’ main goal is to get a necessary recipe. They are ready to search and discover new recipes. As well, they could wonder how to share their recipes on this website. They need to get login information and discover user’s dashboard functionality, how to add their recipes to the system
-- **Existing customers.** They knows website structure and knows how to login, search, add, update and delete recipes.
-- **Admin.** He’s goal is to get access to the back end information to manage it. He needs to manage categories and cuisines such as create, edit update or delete them
-- This website is proposing login system for users to create, update and delete user’s recipes.
+- Common types of users are:
+
+  - As a **New customers** I want to be able to ..
+      1. Get all necessary Gym related information such ass Classes, Timetables, Stuff, Equipment, Facilities and get some preview from inside
+      2. Use the site intuitively
+      3. To purchase exercise plans and merchandise
+      4. To register an account
+      5. To search for plans and merchandise products
+      6. View the details of individual products
+      7. To order plan or merchandise products by category
+      8. To order merchandise products by finer details such as A-Z, price low to high or vice versa
+      9. To add any product to my basket and checkout, without/with an account
+      10. To be informed throughout messages about my actions on the site.
+
+  - As an **Existing customer** Additionally to a new customers, I want to be able to ..
+      1. Have a persona profile with all possible functionality
+      2. View my previous orders
+      3. Save/ update default delivery information
+
+  - As an **Site Owner/ Admin** I want to be able to ..
+      1. Encourage people to use my website
+      2. Sell Exercise Plans, Nutrition Plans, Nutrition and exercise products
+      3. Add new plans and merchandise products
+      4. Edit plans and product details
+      5. Have a fully functional and easy to use payment system
+      6. Provide a contact form where users can send any questions and enquires
 
 #### Developer Goals
 1.  Build a Django project backend by a relational database to create a website that allows users to store and manipulate data records.
@@ -58,15 +79,6 @@ Common types of users are:
 12. Deploy the final version of the code to a hosting platform such as Heroku.
 13. Do not include any passwords or secret keys in the project repository.
 
-
-#### Website Owner Goals
-Main goals of website owner are:
-- To sell more travel packages.
-- Showcase existing destinations.
-- To present relevant inform about countries and destinations.
-- To make information more structural.
-- To attract users to buy an existing packages.
-- To represent contact information.
 
 ### User Stories
 

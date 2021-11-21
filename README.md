@@ -4,7 +4,6 @@
 # Full Stack Frameworks with Django / The CUBE | GYM & Fitness Club
 
 ![logo](assets/images/gym-logo.png)
-![homepage](assets/images/homepage.PNG)
 [Live site on Heroku](https://thecube-gym-fitness-club.herokuapp.com)
 
 # Author
@@ -33,30 +32,32 @@ Andrej Cybovskij
 - Demonstrate and document the development process through a version control system
 - Learn Python+Django theory and practically implement all gained knowledge
 
+
 #### User Goals
 
-- The target audience of this website is very wide. They are different age and status, families or single people.
+- The target audience of this website is quite wide. They are different age, status, families or single people.
 
 Common types of users are:
-- New customers. The users’ main goal is to get necessary travel information. They are ready for travel and can spend some time to choose a destination. They are ready to get some inspirations from the imaginary and customers’ reviews. 
-- Existing customers. They knows website structure. They are ready for travel. Some of them want to be inspired by the imaginary or video to get a new destination. Some of them knows their destination and wants to do a quick buy.
-- Admin. He’s goal is to get access to the back end information to manage it.
-- This website does not proposing any login system.
+- **New customers.** The users’ main goal is to get a necessary recipe. They are ready to search and discover new recipes. As well, they could wonder how to share their recipes on this website. They need to get login information and discover user’s dashboard functionality, how to add their recipes to the system
+- **Existing customers.** They knows website structure and knows how to login, search, add, update and delete recipes.
+- **Admin.** He’s goal is to get access to the back end information to manage it. He needs to manage categories and cuisines such as create, edit update or delete them
+- This website is proposing login system for users to create, update and delete user’s recipes.
 
 #### Developer Goals
-- Build a Django project backend by a relational database to create a website that allows users to store and manipulate data records.
-- Use Multiple Apps structure.
-- Data Modelling trough the relational database schema well-suited for the project.
-- The project should include an authentication mechanism, allowing a user to register and log in.
-- User Interaction to allow user to create and edit models in the backend.
-- Use of Stripe for e-commerce functionality using Stripe.
-- Incorporate a main navigation menu and structured layout.
-- Use of some JavaScript logic you have written to enhance the user experience.
-- Provide off necessary documentation through README.md file to explain what the project does and the value that it provides to its users.
-- Use of Git & GitHub for version control.
-- Made a clear attribution between code written by the author and code from external sources.
-- Deploy the final version of the code to a hosting platform such as Heroku.
-- Do not include any passwords or secret keys in the project repository.
+1.  Build a Django project backend by a relational database to create a website that allows users to store and manipulate data records.
+2.  Use Multiple Apps structure.
+3.  Data Modelling trough the relational database schema well-suited for the project.
+4.  The project should include an authentication mechanism, allowing a user to register and log in.
+5.  User Interaction to allow user to create and edit models in the backend.
+6.  Use of Stripe for e-commerce functionality using Stripe.
+7.  Incorporate a main navigation menu and structured layout.
+8.  Use of some JavaScript logic you have written to enhance the user experience.
+9.  Provide off necessary documentation through README.md file to explain what the project does and the value that it provides to its users.
+10. Use of Git & GitHub for version control.
+11. Made a clear attribution between code written by the author and code from external sources.
+12. Deploy the final version of the code to a hosting platform such as Heroku.
+13. Do not include any passwords or secret keys in the project repository.
+
 
 #### Website Owner Goals
 Main goals of website owner are:
@@ -69,67 +70,68 @@ Main goals of website owner are:
 
 ### User Stories
 
-- As single Traveller, I want to have:
-  1. Ability to find easily all possible destinations to choose.
-  2. Ability to get some visual information about destination.
-  3. Ability to find easily all possible attractions there.
-  4. Ability to find easily all possible information about attractions.
-  5. Ability to find easily all proposed Travel packages and what is included there.
-  6. Ability to find easily price for every package.
-  7. Ability to find easily information about flights or other ways of transportation.
-  8. Ability to find easily information about visa and custom.
-  9. Ability to find easily information about any dangerous illness and necessary vaccination.
-  10. Ability to find easily contact information.
-
-- As a Group Traveller, additional to the single Traveller, I want to have:
-  1. Ability to find easily information for group attractions.
-
-- As a Family Traveller, additional to the single and group Travellers, I want to have:
-  1. Ability to find easily information about family attractions.
-  2. Ability to find easily information about requirements (if they are) for children.
+- As a user, I want to have:
+  1. Ability to easily find out what or who the site is for.
+  2. Ability to easily navigate the website.
+  3. Ability to find recipes.
+  4. Ability to get recipe's full details.
+  5. Ability to create account.
+  6. Ability to update account.
+  7. Ability to login into account.
+  8. Ability to add new recipe.
+  9. Ability to edit my recipe.
+  10. Ability to get in touch with website admin or owner.
 
 ### Design Choices
+This project was created based on the target audience needs and requirements. The target audience is a quite wide range of people who likes to cook. Based on the website theme, were chosen Red, orange and green colors as a main brand colors. They are associated with food and takes attention to themselves. The food theme involves visual attraction to the user that mean website should contain a lot of food imaginary but not overload attention. However existing trends like to use clean and simple design. As a small piece of attraction, website’s buttons contains corresponding icons. According to user requirements, website should stay useful, usable and valuable for everybody. To achieve value from design were used user experience five planes:
 
-This project was built based on the target audience needs. As was mentioned above, the target audience is very wide. Very difficult to create design to be liked by the wide range of people.  We know that Nature is pleasant for all people. That mean, some parts of nature should be placed in this project. Colors were taken as representative of the nature as well as nice images. Design is clean and simple. All attention is on images. However, website should stay useful, usable and valuable for both customer and owner. To implement valuable design, were used process of five planes of good user experience:
-- **Strategy Plane**  – represents business goals. The main website owner goals were presented above. Just a reminder, that main user of this website will be a business people. Whole design should be kept simple in classical style with some bright elements (in this project Imperial Red color plays as bright element). Design should be plain and modern. Information should be well structured and easy to access. Main parts of the information are placed into top navigation. No more than 3 clicks to get information about website owner. Download button is placed in a footer navigation to get CV printable copy.
+- **Strategy Plane**  – aiming to achieve in the first place and for whom. The users of this website are people who likes to cook and share their ideas. The website should be quite simple and universal for everybody. Navigation is used quite standard and known by every online users. Traditional rule is no more than 3 clicks to search or get other information.
 
 - **Scope plane** - represents features we want to include into design. 
   - This project includes following features: 
-     - Header navigation.
+      - Header navigation.
       - Mobile navigation.
+      - Registration system.
+      - Login functionality.
+      - Create, Read, Update and Delete functionality.
       - Intuitive design.
       - SVG logo on top of the page.
-      - Hero Slider.
-      - Image Gallery with modal pop up window
-      - Grid images as a visual representatives.
-      - Google Map with location markers.
+      - Grid/Card images as a visual representatives.
+      - Search functionality.
       - Contact form.
       - Social media icons.
 
-
-- **Structure plane** - Information in this project is structured and logically placed into main parts. All parts placed to the navigation. Exception is for Packages. They are not in the navigation and can be accessed through the destinations page. As well, main navigation elements are placed on the homepage into grid system and complimented by the images.
+- **Structure plane** - this project’s information is structured and logically placed into the main navigation. As well, this project’s content is taken from the MongoDB database. The structure of Database tables are presented in this [link to a database schema](DATABASE.md).
 
 - **Skeleton plane** - part for mock-ups:
   - Wireframes links are presented below:
-   - [Link to a Wireframes for a Desctop view](assets/documents/desctop.pdf)
-   - [Link to a Wireframes for Tablet view ](assets/documents/tab.pdf)
-   - [Link to a Wireframes for Mobile view ](assets/documents/mobile.pdf)
+    - [Link to a Wireframes for a Desctop view](assets/documents/project-3-desctop-wireframes.pdf)
+    - [Link to a Wireframes for Tablet view ](assets/documents/project-3-tablet-wireframes.pdf)
+    - [Link to a Wireframes for Mobile view ](assets/documents/project-3-mobile-wireframes.pdf)
 
-- **Surface plane** - it is a final part of design procedure. The project is built in Classical design style with infusions of modern elements. Abril Fatface font gives additional modern design inclusions. This font curves are not traditional for Travel websites design. It looks more from fashion magazine designs and brings more stylish look. Pale Shades of Blue, Red and green are very pleasant. Colors are associated with water, sun and summer grass. Images are very colourful and attract attention. Website gives a holydays feeling. Same as semi-transparent and grey backgrounds, sliding and fade in animation gives lightweight and elegance.
+- **Surface plane** - it is a final part of design procedure. The project is built in Classical design style with infusions of modern elements. This project is orientated more into the data manipulating. However, the website stays useful, usable and valuable for everybody.
 
 #### Colors
-As I was mentioned above, the color palette were taken to represent colors of Nature. Pale Shades of Blue, Red and green are very pleasant and should associate with water, sun and summer grass. Additionally three shades of grey were used to highlight the colors of Nature. Combination of those colors should create emotional trust and mood of future rest and travel.
+The color palette were created according to people association with the food and professional information from the [Jenn David Design](https://jenndavid.com/colors-that-influence-food-sales-infographic/), food packaging Design Company that has over 20 years of successful experience partnering with specialty food brands.
+
+- The color brand one is Red color (CG Red). It is using for many titles and buttons to attract attention. According to Jenn David Design: Red and yellow are the chief food colors, evoking the taste buds and stimulating the appetite. Both red and yellow are also effective at grabbing attention.
+- The color brand two is Green color (Maximum Green). It is used for titles, subtitles, and buttons. According to Jenn David Design: Green color is connotes with eco-friendliness, healthy (think veggies).
+- The color brand three is Orange color. It is used for hover statements and for user navigation links, to attract attention. According to Jenn David Design: Orange color is a blend of red and yellow, naturally lends itself to food as another appetizing color.
+- The color brand four is Spanish Grey color. It is used as neutral base color and some lines color.
+- The color brand five is a Jet Grey color. It is dark color and used for main content font and all dark design elements to make them visible to user.
 
 - Color palete was created using [Coolors resources](https://coolors.co)
 - ![color scheme](assets/images/colors.PNG)
 
+
 #### Typography
-- Elegant Quicksand sans-serif typeface family font, were using in this project for the body text. Body font size is 16px. This body font is easy to read and good for design.
-- All titles are in Abril Fatface font’s family.
-- According to Google Font, Abril Fatface is a contemporary revamp of classic font, inspired by the heavy titling fonts used in advertising posters in 19th century Britain and France. It has both neutrality and strong presence on the page to attract reader attention with measured tension by its curves, good color and high contrast. 
--  H1 as main title is in size of 50px. It is quite big size, but looks very stylish and attract attention. H2 title is in size of 40px. H3 titles are in size of 30px.
+- Raleway sans-serif typeface family font, were using in this project for the body text. Body font size is 16px. This body font is easy to read and good for design. It is very universal and has very wide range of font weights.
+- All titles H1, H2 and H3 are in Dancing Scrip cursive font’s family.
+- All H4 titles are in Raleway sans-serif typeface font’s family.
+- According to Google Font, Dancing Script is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline. This font is associated with handwriting and is a good choice for recipe book titles. It is similar in style to everybody own hand written recipe book.
+-  H1 as main title is in size of 52px. It is quite big size, but looks very stylish and attract attention. H2 title is in size of 42px. H3 titles are in size of 32px. H4 titles are in size of 26px.
 - All fonts are reduced in size for mobile devices to fit into the small screen of devices:
-- H1 = 40px, H2 = 35px, H3 = 27px.
+- H1 = 40px, H2 = 30px, H3 = 25px, H4 = 22px.
 - body font is in same size for mobile devices.
 
 - Font examples are presented below:
@@ -143,37 +145,33 @@ As I was mentioned above, the color palette were taken to represent colors of Na
  
 
 #### Images
-- For user inspiration and Travel destination illustrations, there are used lot of colourful images. Currently, for demonstration purpose were chosen 5 destinations: Ireland, Germany, France, Italy and Spain. Accordingly, images were chosen to represent chosen destinations. 
-- Font Awesome icons were used to visually represent all major social media resources. 
-- As well were used svg Arrows, Closing icons to demonstrate on website. I created them.
+- To demonstrate main Gym and Fitness theme, in this project were used lot of colourful images.
+- As well a lot of images were using for shopping pages.
+- Font Awesome icons were used to visually represent all major social media resources and as additional information on buttons. 
 - [Images and logo were taken from the Megapixl resources](https://www.megapixl.com)
-
+- [Shopping page images were taken from the Boutique Ado and Kaggle website] (https://www.kaggle.com/datasets)
+- [nutrition images were taken from the HPnutrition website](https://www.hpnutrition.ie/)
 
 #### Design Elements
 List of all elements used on website: 
-- top menu (desktop navigation)
-- sidebar menu (mobile navigation)
+- top menu (desktop/mobile navigation)
 - footer
-- containers/section
+- containers/cards
+- check boxes
 - buttons
 - text input
 - textarea inputs
-- modals/layers
 - images (.png, .jpg, .svg)
 - icons
-- map
 - contact form
 
 
 #### Animations and Transitions
 
-Project has range of animations. It draws attention to the elements and adding value to the website style and design.
+Project has a limited range of animations. It draws attention to the element.
 - Animation is added to the following elements:
-  - **Zoom in** animation is added to many grid images, images in the Gallery and all social links icons. This animation is not annoying but attract attention to the elements.
-  - **Fade in from the bottom** animation is added to the h1, h2 titles. This animation is not annoying too and can be watchable for a long time. This animation is added to the images inside the Gallery Light box too.
-  - **Sliding from/to the top** animation is added to the image Gallery light box.
-  - **Rotation** animation is added to the closing button on Gallery Light box, 
-  - **Hover** state is used for all icons and buttons. On hover, they are changing background and text colors. Hover effect is added to top navigation elements too. 
+  - **Hover** state is used for all icons, header navigation and buttons. On hover, they are changing background and text colors sliding from bottom to top.
+  - **Sliding from the bottom** animation is added to buttons, h1, h2 titles. As well this animation is added to forms.
 
 ### Wireframes
 
@@ -188,16 +186,22 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/wireframes/) s
 Following features will be used in this project:
 
   - Intuitive design. Design is clear and understandable.
-  - Designed with HTML5, CSS, JavaScript and Bootstrap.
+  - Designed with HTML5, CSS, JavaScript and Materialize.
   - Fixed Header navigation. Simple and easy to navigate.
   - Mobile navigation (sliding from the left).
-  - Clickable Header logo. 
-  - Hero slider. To present images for users. 
-  - Image Gallery with pop up light box for large preview.
-  - Location Map with clickable Markers. JSON objects are used for content information.
+  - Clickable Header logo.  
+  - Search functionality.
+  - Registration functionality.
+  - Login functionality.
+  - Create,read, update and delete functionality for the user.
+  - Database connection and data handling.
   - Contact form with CTA, to be in touch with website's owner.
   - Social media icons are at the bottom of every page.
-  - Newsletter sign up form at the bottom of every page.
+
+### Database Planning
+
+The database "The CUBE | GYM & Fitness Club" will contain 4 collections: Users, Recipes, Cuisine and Categories:
+- [Link to a database schema](DATABASE.md)
 
 
 #### Implemented Features
@@ -207,71 +211,56 @@ All planned features are implemented and working properly
 #### Future Features
 
 Features to be implemented in the future:
-- Add more destinations on the map
-- Add Image on the Country info window
-- Add search functionality
-- Add Flight booking functionality
-- Add attraction search functionality
-- Add booking functionality
+- Add cuisine locations on the map
+- Add recipe search on map functionality
+- Add recipe to user favourites
+- Preview and manage favourite’s collection
+- Add image upload functionality
+- Integrate partners adds to website
 
 ## Technologies Used
 
-3rd party technologies to list:
-- Wirefames by Balsamiq to get quick preview of the project
-- Color palette resources to get a visual representation of all branding colors 
-- Images were taken from the Megapixl resources to get illustrations and logos for the website
-- Font Awesome Icons to represent social media in graphic way
-- Google Fonts
-- Google Maps
-- Markdown table generator
-- Markdown table of contents
-- Bootstrap - by linking via Bootstrap CDN to HTML Doc
-- jQuery - JavaScript library
-- JSON - storing and transporting data
-
-### Frameworks and Extensions
-- [Bootstrap 4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-
-### Fonts
-- Google Fonts:
-  - [Oswald font can be found here](https://fonts.google.com/specimen/Oswald?query=oswa)
-  - [Roboto Mono font can be found here](https://fonts.google.com/specimen/Roboto+Mono?query=robot)
-  - [Roboto font can be found here](https://fonts.google.com/specimen/Roboto?query=robot)
-
+The following languages, frameworks, libraries, and other tools were used to construct this project:
 
 ### Programing Languages
 - [HTML](https://www.w3schools.com/html/default.asp) The project uses **HTML** to define DOM elements.
 - [CSS](https://www.w3schools.com/w3css/default.asp) The project uses **CSS** to define DOM appearance.
-- [JavaScript](https://www.javascript.com) The project uses **JavaScript** to manipulate with content. 
-- [JQuery](https://jquery.com) The project uses **JQuery** to simplify DOM manipulation.
-- [JSON](https://www.json.org/json-en.html) The project uses **JSON** to store and transmit data objects.
+- [JavaScript](https://www.javascript.com) The project uses **JavaScript** to interact with content. 
+- [Python](https://www.python.org) The project uses **Python+Flask** to manipulate with content.
 - [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown.
 
-## Tools and Resources
-- [Wirefames by Balsamiq](https://balsamiq.com/wireframes/)
-- [Am I Responsive](http://ami.responsivedesign.is/) - Checks for responsive website and mockup image generator.
-- [Color palette resources](https://coolors.co) 
+### Frameworks and Libraries:
+- [Materialize](https://materializecss.com/) In the project were used **Materialize** libraries for styling, layout and typography.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) In the project were used **Flask** framework to build the web application.
+- [MongoDB](https://www.mongodb.com/) In the project were used **MongoDB** to store data objects.
+- [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) In the project were used **Flask-PyMongo** extension to access MongoDB from flask.
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) In the project were used **Werkzeug** libraries to hash passwords and secure filenames.
+- [Heroku](https://heroku.com/) In the project were used **Heroku** cloud platform for deployment.
+- [GitHub](https://github.com) In the project were used **GitHub** hosting platform for version control.
+
+### Fonts
+Google Fonts:
+
+- [Oswald font can be found here](https://fonts.google.com/specimen/Oswald?query=oswa)
+- [Roboto Mono font can be found here](https://fonts.google.com/specimen/Roboto+Mono?query=robot)
+- [Roboto font can be found here](https://fonts.google.com/specimen/Roboto?query=robot)
+
+
+### Tools and Resources
+- [Wirefames by Balsamiq](https://balsamiq.com/wireframes/) - to create professional looking wire frames
+- [Am I Responsive](http://ami.responsivedesign.is/) - to checks for responsive website and mockup image generator.
+- [Color palette resources](https://coolors.co) - to create color palette
 - [Markdown table generator](https://www.tablesgenerator.com/markdown_tables)
-- [Markdown table of contents](http://ecotrust-canada.github.io/markdown-toc/)
+- [Markdown table of contents](http://ecotrust-canada.github.io/markdown-toc/) to create table of contents
 - [Youtube](https://www.youtube.com/watch?v=rz_8NDyC6Xk)- General resource.
-- [Google Map Documentation](https://developers.google.com/maps/documentation/javascript/overview)
 - [Stack Overflow](https://stackoverflow.com/) - General resource.
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
+- [ImgBB -free image hosting and sharing service](https://imgbb.com/)
 
-## [Testing](assets/documents/Testing.md)
+## Testing
+Details of testing can be found in a separate document
+- [Link to a testing document](TESTING.md)
 
-  - Testing documentation can be found on a separate [document](assets/documents/Testing.md)
-
-
-### Lighthouse performance
-![Lighthouse Performance](assets/images/lighthouse1.PNG)
-
-
-## Code validity
-  - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was using on this project.
-  - [W3C Markup Validation Service](https://validator.w3.org/) was using on this project.
-  - [JavaScript JSHINT Service](https://jshint.com/) was using for code warning & error check
-  - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) was using to validate all tags
 
 ## Version Control
  - Used Git for version control.
@@ -280,67 +269,52 @@ Features to be implemented in the future:
 
 ## Deployment
 
-This project was developed using open source Gitpod automated and ready-to-code development environments and pushed to GitHub.
+This project was developed using open source Heroku cloud Platform.
 To deploy this project, the following steps were taken:
-1. Login into GitHub
-2. From the list of Repositories select milestone-project-02
-3. From the top menu items, select last element “Settings”
-4. Scroll down to the Pages section.
-5. Under title “Source” click drop down menu and select Branch: main and save
-6. Return to the Code item and refresh page
-7. The website is now deployed
-8. From the top right side, after About section, click on gear icon
-9. Inside the pop up window, under Website title add link to the deployed website and save
-10. Deployed website link should appears on the right side.
+1.  Inside GitHub application create requirements.txt file to put all required files there (pip freeze > requirements.txt)
+2.  Inside GitHub application create Procfile to let Heroku know what file runs the application, (add there web: python app.py)
+3.  Create an account on Heroku and create a new app. Follow all proposed steps
+4.  Choose deployment method GitHub repository
+5.  Connect to GitHub section make sure your GitHub profile is displayed
+6.  Add repository name and click search
+7.  When it is found, click connect button
+8.  Go to the app settings on Heroku and click 'Reveal Config Vars'
+9.  Add the required keys as they are in your local env.py (i.e IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY )
+10. In the Deployment tab enable Automatic Deployment
+11. Deploy a GitHub branch choose your branch and press “Deploy Branch” button
+12. After done and displaying sign “Your app was successfully deployed” click view to launch a new app
+13. Deployed site is now available and should automatically update on any changes
 
-
-How to run project locally:
-
-To clone this project into Gitpod you will need to do following steps:
-1. A Github account
-2. Run any Browser (Chrome as example)
-3. Login into Gitpod account
-4. Navigate to Project GitHub repository
-5. Click the green button “Gitpod” in the top right corner.
-6. This will redirect you to a new Gitpod workspace, to be created from the github code, where you can work locally
 
 ## Credits
 
 ### Content
 
-- Country information was copied from the Wikipedia website pages:
- - [Ireland](https://en.wikipedia.org/wiki/Ireland)
- - [Germany](https://en.wikipedia.org/wiki/Germany)
- - [France](https://en.wikipedia.org/wiki/France)
- - [Italy](https://en.wikipedia.org/wiki/Italy)
- - [Spain](https://en.wikipedia.org/wiki/Spain)
-- Destinations information was copied from the [Expedia](https://www.expedia.ie/Europe.d6022967.Holidays-City-Breaks?pwaLob=wizard-package-pwa)
+- [GO GYM Limerick](https://gogymlimerick.ie/) Go Gym Sport Club Limerick 
+- [HPnutrition](https://www.hpnutrition.ie/)  Ireland’s largest online sports supplements store
+- [Boutique Ado and Kaggle website] (https://www.kaggle.com/datasets)
 
 ### Media
 
 - The images used in this project were obtained from the [Megapixl resources](https://www.megapixl.com)
 - Icons [Font Awesome](https://fontawesome.com/v4.7.0/)
-- SVG icons - self-made on [Adobe Illustrator](https://www.adobe.com/products/illustrator.html)
+- SVG logo and favicon - base is taken from [Megapixl resources](https://www.megapixl.com) and modified on [Adobe Illustrator](https://www.adobe.com/products/illustrator.html)
 - Image optimisation - self-made on [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
 
 ### Code Snippets and Tutorials
 
-- Carousel slideshow adopted from [Bootstrap](https://getbootstrap.com/docs/4.0/components/carousel/)
-- Gallery Responsive Image Lightbox were created using [CodingNepal tutorials](https://www.youtube.com/watch?v=rz_8NDyC6Xk)
-- Destinations Map were created using [
-Sam Codes tutorials](https://www.youtube.com/watch?v=uPhWSyRqQDA), [
-Google Map Documentation](https://developers.google.com/maps/documentation/javascript/overview) and [
-Google Info Window Documentation](https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple-max)
-- Looping through JSON Data to Generate HTML were created using [tutorials](https://stackoverflow.com/questions/34907982/looping-through-json-data-to-generate-html)
-- Contact Us [Email Services](https://www.emailjs.com) were created using [Code Institute Tutorials](https://www.youtube.com/watch?v=KaAeh4Risrc&t=234s)
-
+- [Materialize & Static Files Setup](https://www.youtube.com/watch?v=7R0qJ7QJ2-U) were created using [Code Institute Tutorials](https://www.youtube.com/watch?v=7R0qJ7QJ2-U)
+- Code Institute Tutorials [User Authentication And Authorization 1](https://www.youtube.com/watch?v=r4qlVU20Aoc&t=357s)
+- Code Institute Tutorials [User Authentication And Authorization 2](https://www.youtube.com/watch?v=Sfkg3358Igc&t=228s)
+- Code Institute Tutorials [Login Functionality](https://www.youtube.com/watch?v=KzReYjMAgn8&t=14s)
+- Code Institute Tutorials [Display User Profile Page](https://www.youtube.com/watch?v=1rfV6CPcFX0)
+- Code Institute Tutorials [Logging Out](https://www.youtube.com/watch?v=7zEIYYHsTHA)
+- Code Institute Tutorials [Add Categories To MongoDB](https://www.youtube.com/watch?v=vvt8RZPDeDg)
+- Tutorial to round decimals [Stack overflow](https://stackoverflow.com/questions/11260155/how-to-use-float-filter-to-show-just-two-digits-after-decimal-point)
 
 ### Acknowledgments
 
 I would like to thank:
 - My mentor [Malia Havlicek](https://code-institute-room.slack.com/team/UERRFE54G) for help in testing, review and invaluable advices.
-- CodingNepal for Gallery [tutorials](https://www.youtube.com/watch?v=rz_8NDyC6Xk)
-- Sam Codes for Map [tutorials](https://www.youtube.com/watch?v=uPhWSyRqQDA)
-- Code Institute for mail service [tutorials](https://www.youtube.com/watch?v=KaAeh4Risrc&t=234s)
-
-
+- Code Institute for Flask Mini-Project [tutorial](https://www.youtube.com/watch?v=y72Dq3GRxhc&t=14s)
+- Code Institute for Flask Mini-Project [tutorial 2](https://www.youtube.com/watch?v=Z4caY2YtQLY&t=9s)

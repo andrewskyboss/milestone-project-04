@@ -70,17 +70,41 @@ Main goals of website owner are:
 
 ### User Stories
 
-- As a user, I want to have:
-  1. Ability to easily find out what or who the site is for.
-  2. Ability to easily navigate the website.
-  3. Ability to find recipes.
-  4. Ability to get recipe's full details.
-  5. Ability to create account.
-  6. Ability to update account.
-  7. Ability to login into account.
-  8. Ability to add new recipe.
-  9. Ability to edit my recipe.
-  10. Ability to get in touch with website admin or owner.
+- Viewing and Navigation
+  - As a Shoper, I want to be able to ..
+    1. View a list of products select some to purchase
+    2. View individual product details. Identify the price, description, product image
+    3. Quickly identify deals, clearance items and special offers. Take advantage of special savings on products I'd like to purchase
+    4. Easily view the total of my purchases at any time. Avoid spending too much
+
+- Registration and User Accounts
+  - As a Site User, I want to be able to ..
+    1. Easity register to an account. Have a personal account and be able to view my profile
+    2. Easily to login or logout. Access my personal account information
+    3. Easily to recover my password in case I forgot it. Recover access to my account
+    4. Receive an email confirmation after registering. Verify that my acount registration was successful
+    5. Have a personalized user profile. View my personal order history and order confirmations and save my payment information
+
+- Sorting and Searching 
+  - As a Shoper, I want to be able to ..
+    1.  Sort the list of available products Easily identify the best priced and categorically sorted products
+    2.  Sort a specific category of product. Find the best priced product in a specific category or sort the product in that category by name
+    3.  Sort multiple categories of products simultaneously. Find the best priced across broad categories, such as food or merch
+    4.  Search for a product by name or description. Find a specific product I'd like topurchase
+    5.  Easily see what I've searched for and the number of results. Quickly decide whether the product I want is available
+    6.  Easily select the quantity of a product when purchasing it. Ensure I don’t accidentally select the wrong product
+    7.  View items in my bag to be purchased. Identify the total cost of my purchase and all items I will receive
+    8.  Adjust the quantity of individual items in my bag. Easily make changes to my purchase before checkout
+    9.  Easily enter my payment information. Check out quickly and with no hassles
+    10. Feel my personal and payment information is safe and secure. Confidently provide the needed information to make a purchase
+    11. View an order confirmation after checkout. Verify that I haven't made any mistakes
+    12. Receive an email confirmation after checking out. Keep the confirmation of what I've purchased for my records
+
+- Admin and store manager
+  - As a Store Owner, I want to be able to ..
+    1.  Add a product. Add new items to my store
+    2.  Edit / Update a product Change product price, description, images and other product criteria
+    3.  Delete Product. Remove items that are no longer for sale
 
 ### Design Choices
 This project was created based on the target audience needs and requirements. The target audience is a quite wide range of people who likes to cook. Based on the website theme, were chosen Red, orange and green colors as a main brand colors. They are associated with food and takes attention to themselves. The food theme involves visual attraction to the user that mean website should contain a lot of food imaginary but not overload attention. However existing trends like to use clean and simple design. As a small piece of attraction, website’s buttons contains corresponding icons. According to user requirements, website should stay useful, usable and valuable for everybody. To achieve value from design were used user experience five planes:
@@ -89,16 +113,18 @@ This project was created based on the target audience needs and requirements. Th
 
 - **Scope plane** - represents features we want to include into design. 
   - This project includes following features: 
-      - Header navigation.
-      - Mobile navigation.
+      - Header/Mobile navigation.
       - Registration system.
       - Login functionality.
+      - E Commerce functionality
+      - Payment system functionality
+      - Mail Notification/ Confirmation system
+      - Toast notification System
       - Create, Read, Update and Delete functionality.
       - Intuitive design.
       - SVG logo on top of the page.
       - Grid/Card images as a visual representatives.
       - Search functionality.
-      - Contact form.
       - Social media icons.
 
 - **Structure plane** - this project’s information is structured and logically placed into the main navigation. As well, this project’s content is taken from the MongoDB database. The structure of Database tables are presented in this [link to a database schema](DATABASE.md).

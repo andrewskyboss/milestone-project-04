@@ -10,7 +10,7 @@ Schema
   {
 
     "_id"      :    <ObjectID>
-    "pk" :    <string>
+    "pk"       :    <string>
     "password" :    <string>
 
   }

@@ -131,9 +131,9 @@ This project was created based on the target audience needs and requirements. Th
 
 - **Skeleton plane** - part for mock-ups:
   - Wireframes links are presented below:
-    - [Link to a Wireframes for a Desctop view](assets/documents/project-3-desctop-wireframes.pdf)
-    - [Link to a Wireframes for Tablet view ](assets/documents/project-3-tablet-wireframes.pdf)
-    - [Link to a Wireframes for Mobile view ](assets/documents/project-3-mobile-wireframes.pdf)
+    - [Link to a Wireframes for a Desctop view](assets/documents/project-4-desctop-wireframes.pdf)
+    - [Link to a Wireframes for Tablet view ](assets/documents/project-4-tablet-wireframes.pdf)
+    - [Link to a Wireframes for Mobile view ](assets/documents/project-4-mobile-wireframes.pdf)
 
 - **Surface plane** - it is a final part of design procedure. The project is built in Classical design style with infusions of modern elements. This project is orientated more into the data manipulating. However, the website stays useful, usable and valuable for everybody.
 
@@ -175,7 +175,7 @@ The color palette were created according to people association with the food and
 - As well a lot of images were using for shopping pages.
 - Font Awesome icons were used to visually represent all major social media resources and as additional information on buttons. 
 - [Images and logo were taken from the Megapixl resources](https://www.megapixl.com)
-- [Shopping page images were taken from the Boutique Ado and Kaggle website] (https://www.kaggle.com/datasets)
+- [Shopping page images were taken from the Boutique Ado and Kaggle website](https://www.kaggle.com/datasets)
 - [nutrition images were taken from the HPnutrition website](https://www.hpnutrition.ie/)
 
 #### Design Elements
@@ -203,9 +203,9 @@ Project has a limited range of animations. It draws attention to the element.
 
 The wireframes were created using [Balsamiq](https://balsamiq.com/wireframes/) software. It was a part of Scope Plane of design process.
 - Wireframes links are presented below:
-- [Link to a Wireframes for a Desctop view](assets/documents/desctop.pdf)
-- [Link to a Wireframes for Tablet view ](assets/documents/tab.pdf)
-- [Link to a Wireframes for Mobile view ](assets/documents/mobile.pdf)
+- [Link to a Wireframes for a Desctop view](assets/documents/project-4-desctop-wireframes.pdf)
+- [Link to a Wireframes for Tablet view ](assets/documents/project-4-tablet-wireframes.pdf)
+- [Link to a Wireframes for Mobile view ](assets/documents/project-4-mobile-wireframes.pdf)
 
 ### Features
 
@@ -256,11 +256,11 @@ The following languages, frameworks, libraries, and other tools were used to con
 - [Markdown](https://www.markdownguide.org/) Documentation within the readme was generated using markdown.
 
 ### Frameworks and Libraries:
-- [Materialize](https://materializecss.com/) In the project were used **Materialize** libraries for styling, layout and typography.
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/) In the project were used **Flask** framework to build the web application.
-- [MongoDB](https://www.mongodb.com/) In the project were used **MongoDB** to store data objects.
-- [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) In the project were used **Flask-PyMongo** extension to access MongoDB from flask.
-- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) In the project were used **Werkzeug** libraries to hash passwords and secure filenames.
+- [Bootstrap](https://getbootstrap.com/) In the project were used **Bootstrap** framework for styling, layout and typography.
+- [Django](https://www.djangoproject.com/) In the project were used **Django** framework to build the web application.
+- [AWS](https://aws.amazon.com/) In the project were used **AWS** to store data objects.
+- [Stripe](https://stripe.com/ie) In the project were used **Stripe** financial services software for payment.
+- [Googlw Mail Service](https://www.google.ie/) In the project were used **Googlw Mail Service** for email notifications and confirmation.
 - [Heroku](https://heroku.com/) In the project were used **Heroku** cloud platform for deployment.
 - [GitHub](https://github.com) In the project were used **GitHub** hosting platform for version control.
 
@@ -293,7 +293,7 @@ Details of testing can be found in a separate document
  - Additional copy vere created localy
  - Constantly versions were updated and merged
 
-## Deployment
+## Heroku Deployment
 
 This project was developed using open source Heroku cloud Platform.
 To deploy this project, the following steps were taken:

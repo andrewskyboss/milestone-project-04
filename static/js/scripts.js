@@ -40,3 +40,18 @@ $(window).on('load scroll', function(e) {
         $('body').removeClass('scrolled');
     }
 });
+
+/*----------- Mobile menu Open Close ----------*/
+
+const mainMenuTrigger = document.querySelector(".main-menu-trigger");
+const mainMenu = document.querySelector(".main-menu");
+
+mainMenuTrigger.addEventListener("click", () => {
+	mainMenuTrigger.classList.toggle("main-menu-visible");
+	mainMenu.classList.toggle("visible");
+})
+
+document.querySelectorAll(".menu-link").forEach(n => n.addEventListener("click", ()=> {
+	mainMenuTrigger.classList.remove("main-menu-visible");
+	mainMenu.classList.remove("visible");
+}))
